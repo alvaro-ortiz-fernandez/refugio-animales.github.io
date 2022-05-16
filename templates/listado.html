@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <title>Listado de animales</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="contenedor bg-gray">
+        <div class="fila">
+            <div class="columna-smartphone-12">
+                <div class="bg-yellow">
+                    <p class="sin-margen-inferior">NAVBAR</p>
+                </div>
+            </div>
+            <div class="columna-smartphone-12">
+                <div class="bg-orange">
+                    <p class="sin-margen-superior">BUSCADOR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="fila">
+        <!-- Listado con scroll -->
+        <div class="columna-escritorio-8 columna-smartphone-12">
+            <div id="listado-animales">
+                <!-- 1º Fila de imágenes -->
+                <div class="fila">
+                    <!-- 1º Imagen (rectangular) -->
+                    <div class="columna-smartphone-8">
+                        <div>
+                            <div class="imagen-cuadrada achura-doble">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Solid_blue.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2º Imagen (cuadrada) -->
+                    <div class="columna-smartphone-4">
+                        <div>
+                            <div class="imagen-cuadrada">
+                                <img src="https://media.istockphoto.com/vectors/light-blue-simple-pastel-soft-color-for-background-blue-plain-color-vector-id1253590992?k=20&m=1253590992&s=170667a&w=0&h=_CIrRNXERoqSKjirxNe_GTOKstiO7kqNuEFr2k5vcrQ="/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2º Fila de imágenes -->
+                <div class="fila">
+                    <!-- 1º Imagen (cuadrada) -->
+                    <div class="columna-smartphone-4">
+                        <div>
+                            <div class="imagen-cuadrada">
+                                <img src="https://media.istockphoto.com/vectors/light-blue-simple-pastel-soft-color-for-background-blue-plain-color-vector-id1253590992?k=20&m=1253590992&s=170667a&w=0&h=_CIrRNXERoqSKjirxNe_GTOKstiO7kqNuEFr2k5vcrQ="/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2º Imagen (rectangular) -->
+                    <div class="columna-smartphone-4">
+                        <div>
+                            <div class="imagen-cuadrada altura-doble">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Solid_blue.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3º Imagen (cuadrada) -->
+                    <div class="columna-smartphone-4">
+                        <div>
+                            <div class="imagen-cuadrada">
+                                <img src="https://media.istockphoto.com/vectors/light-blue-simple-pastel-soft-color-for-background-blue-plain-color-vector-id1253590992?k=20&m=1253590992&s=170667a&w=0&h=_CIrRNXERoqSKjirxNe_GTOKstiO7kqNuEFr2k5vcrQ="/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3º Fila de imágenes -->
+                <div class="fila">
+                    <!-- 1º Imagen (cuadrada) -->
+                    <div class="columna-smartphone-4">
+                        <div>
+                            <div class="imagen-cuadrada">
+                                <img src="https://media.istockphoto.com/vectors/light-blue-simple-pastel-soft-color-for-background-blue-plain-color-vector-id1253590992?k=20&m=1253590992&s=170667a&w=0&h=_CIrRNXERoqSKjirxNe_GTOKstiO7kqNuEFr2k5vcrQ="/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2º Imagen (cuadrada) -->
+                    <div class="columna-smartphone-4 columna-smartphone-offset-4">
+                        <div>
+                            <div class="imagen-cuadrada">
+                                <img src="https://media.istockphoto.com/vectors/light-blue-simple-pastel-soft-color-for-background-blue-plain-color-vector-id1253590992?k=20&m=1253590992&s=170667a&w=0&h=_CIrRNXERoqSKjirxNe_GTOKstiO7kqNuEFr2k5vcrQ="/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icono de carga -->
+                <div class="fila">
+                    <div class="columna-smartphone-12 centrado">
+                        <span class="cargando"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menú de opciones -->
+        <div class="columna-escritorio-4 columna-smartphone-12">
+            <div id="menu-opciones">
+                <div class="fila">
+                    <!-- Texto -->
+                    <div class="columna-smartphone-12">
+                        <h1 class="justificado sin-margen-superior">Lorem ipsum, dolor sit amet consectetur</h1>
+                        <p class="justificado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit.</p>
+                    </div>
+
+                    <!-- Buscador -->
+                    <div class="columna-smartphone-12">
+                        <input class="buscador" type="text" placeholder="Introduzca un término de búsqueda..." />
+                    </div>
+                </div>
+                
+                <!-- Opciones de búsqueda -->
+                <div class="fila">
+                    <!-- Categoria -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img class="icono" src="../assets/icons/categoria.svg" />
+                    </div>
+                    <!-- Ubicación -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img class="icono" src="../assets/icons/ubicacion.svg" />
+                    </div>
+                    <!-- Foto -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img class="icono" src="../assets/icons/imagen.svg" />
+                    </div>
+                    <!-- Precio -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img class="icono" src="../assets/icons/precio.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -51,6 +51,9 @@ body {
  * Filas - Aplicamos los estilos para separar
  * horizontalmente las columnas
  * */
+.fila {
+    margin-bottom: 20px;
+}
 .fila:before,
 .fila:after {
     display: table;
@@ -192,3 +195,12 @@ body {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+/**
+ * Estilos para los márgenes
+ * */
+.sin-margen           { margin: 0 }
+.sin-margen-superior  { margin-top: 0 }
+.sin-margen-inferior  { margin-bottom: 0 }
+.sin-margen-izquierdo { margin-left: 0 }
+.sin-margen-derecho   { margin-right: 0 }

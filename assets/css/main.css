@@ -1,14 +1,4 @@
 /**
- * ESTILOS PARA LOS TEXTOS
- * */
-
-/* Alineación al centro */
-.centrado { text-align: center; }
-
-/* Alineación justificada */
-.justificado { text-align: justify; }
-
-/**
  * ESTILOS PARA LA VISIBILIDAD
  * */
  .oculto { display: none; }
@@ -19,3 +9,107 @@
 @media (min-width: 768px) {
     .oculto-escritorio { display: none; }
 }
+
+/**
+ * ESTILOS PARA LOS TEXTOS
+ * 
+ * Alineación */
+.centrado { text-align: center; }
+.a-la-izquierda { text-align: left; }
+.a-la-derecha { text-align: right; }
+.justificado { text-align: justify; }
+
+
+/**
+ * ESTILOS PARA LAS IMÁGENES
+ * 
+ * Imágenes - Establecemos el CSS para que
+ * las imágenes tengan una altura relativa
+ * a la anchura definida por el Grid (columnas).
+ * */
+.imagen-cuadrada {
+    position: relative;
+    width: 100%;
+}
+
+.imagen-cuadrada img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagen-cuadrada:after {
+    content: "";
+    display: block;
+}
+
+/* Anchura igual a la altura */
+.imagen-cuadrada:after {
+    padding-bottom: 100%;
+}
+
+/* Anchura al doble de la altura */
+.imagen-cuadrada.achura-doble:after {
+    padding-bottom: calc(50% - 10px);
+}
+
+/* Altura al doble de la anchura */
+.imagen-cuadrada.altura-doble img {
+    height: calc(200% + 20px);
+}
+
+/**
+ * BUSCADOR
+ * */
+.buscador {
+    width: calc(100% - 60px);
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 6px 10px 6px 30px;
+}
+.buscador:before {
+    content: url("../icons/buscar.svg");
+}
+
+/**
+ * ICONOS
+ * */
+ .icono {
+
+ }
+
+/**
+ * ICONO DE CARGA
+ * */
+@keyframes cargando {
+    to { transform: rotate(360deg); }
+}
+.cargando {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: text-bottom;
+    border: 4px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: cargando .75s linear infinite;
+}
+
+
+
+
+
+.bg-yellow { background: yellow; }
+.bg-orange { background: orange; }
+.bg-red { background: red; }
+.bg-blue { background: blue; }
+.bg-lightblue { background: lightblue; }
+.bg-green { background: green; }
+.bg-gray { background: lightgray; }
+.bg-black { background: black; }
