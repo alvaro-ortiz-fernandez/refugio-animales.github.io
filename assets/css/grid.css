@@ -1,0 +1,194 @@
+/**
+ * ESTILOS PARA EL GRID
+ * */
+
+/* Eliminamos el margen por defecto que meten algunos navegadores */
+body {
+    margin: 0 !important;
+}
+
+/**
+ * El cuerpo de la página define un margen interno
+ * de 15px en pantallas para dispositivos móviles,
+ * y de 60px en pantallas para pantallas de escritorio
+ * */
+@media (max-width: 767px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/**
+ * Contenedores - Marcamos margen negativo para contrarestar
+ * el margen del body, y padding interno para igualar el grid
+ * al resto de filas sin contenedor
+ * */
+@media (max-width: 767px) {
+    .contenedor {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor {
+        margin-left: -50px;
+        margin-right: -50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/**
+ * Filas - Aplicamos los estilos para separar
+ * horizontalmente las columnas
+ * */
+.fila:before,
+.fila:after {
+    display: table;
+    content: " ";
+}
+.fila:after {
+    clear: both;
+}
+
+/**
+ * Las columnas se definen por tamaño de menor a mayor,
+ * dado que el navegador aplica el último estilo defindo.
+ * 
+ * De este modo, se puede definir el tamaño que una columna
+ * debe adoptar en los distintos tamaños de dispositivos.i
+ * 
+ * Columnas para pantallas con anchura inferior a 768 píxeles
+ * */
+.columna-smartphone-12 { width: 100%  }
+.columna-smartphone-11 { width: 91.6% }
+.columna-smartphone-10 { width: 83.3% }
+.columna-smartphone-9  { width: 75%   }
+.columna-smartphone-8  { width: 66.6% }
+.columna-smartphone-7  { width: 58.3% }
+.columna-smartphone-6  { width: 50%   }
+.columna-smartphone-5  { width: 41.6% }
+.columna-smartphone-4  { width: 33.3% }
+.columna-smartphone-3  { width: 25%   }
+.columna-smartphone-2  { width: 16.6% }
+.columna-smartphone-1  { width: 8.3%  }
+
+.columna-smartphone-offset-11 { margin-left: 91.6% }
+.columna-smartphone-offset-10 { margin-left: 83.3% }
+.columna-smartphone-offset-9  { margin-left: 75%   }
+.columna-smartphone-offset-8  { margin-left: 66.6% }
+.columna-smartphone-offset-7  { margin-left: 58.3% }
+.columna-smartphone-offset-6  { margin-left: 50%   }
+.columna-smartphone-offset-5  { margin-left: 41.6% }
+.columna-smartphone-offset-4  { margin-left: 33.3% }
+.columna-smartphone-offset-3  { margin-left: 25%   }
+.columna-smartphone-offset-2  { margin-left: 16.6% }
+.columna-smartphone-offset-1  { margin-left: 8.3%  }
+
+/**
+ * Columnas para pantallas con anchura a partir de 768px píxeles
+ *
+ * Se aplican media queries para que estas clases no se apliquen
+ * en pantallas con anchura inferior.
+ * */
+@media (min-width: 768px) {
+    .columna-escritorio-12 { width: 100%  }
+    .columna-escritorio-11 { width: 91.6% }
+    .columna-escritorio-10 { width: 83.3% }
+    .columna-escritorio-9  { width: 75%   }
+    .columna-escritorio-8  { width: 66.6% }
+    .columna-escritorio-7  { width: 58.3% }
+    .columna-escritorio-6  { width: 50%   }
+    .columna-escritorio-5  { width: 41.6% }
+    .columna-escritorio-4  { width: 33.3% }
+    .columna-escritorio-3  { width: 25%   }
+    .columna-escritorio-2  { width: 16.6% }
+    .columna-escritorio-1  { width: 8.3%  }
+
+    .columna-escritorio-offset-12 { margin-left: 100%  }
+    .columna-escritorio-offset-11 { margin-left: 91.6% }
+    .columna-escritorio-offset-10 { margin-left: 83.3% }
+    .columna-escritorio-offset-9  { margin-left: 75%   }
+    .columna-escritorio-offset-8  { margin-left: 66.6% }
+    .columna-escritorio-offset-7  { margin-left: 58.3% }
+    .columna-escritorio-offset-6  { margin-left: 50%   }
+    .columna-escritorio-offset-5  { margin-left: 41.6% }
+    .columna-escritorio-offset-4  { margin-left: 33.3% }
+    .columna-escritorio-offset-3  { margin-left: 25%   }
+    .columna-escritorio-offset-2  { margin-left: 16.6% }
+    .columna-escritorio-offset-1  { margin-left: 8.3%  }
+    .columna-escritorio-offset-0  { margin-left: 0%    }
+}
+
+/**
+ * Estilos aplicables a todos los tamaños de columna
+ *
+ * Se aplican media queries para que estas clases no se apliquen
+ * en pantallas con anchura inferior.
+ * */
+.columna-smartphone-1,
+.columna-escritorio-1,
+.columna-smartphone-2,
+.columna-escritorio-2,
+.columna-smartphone-3,
+.columna-escritorio-3,
+.columna-smartphone-4,
+.columna-escritorio-4,
+.columna-smartphone-5,
+.columna-escritorio-5,
+.columna-smartphone-6,
+.columna-escritorio-6,
+.columna-smartphone-7,
+.columna-escritorio-7,
+.columna-smartphone-8,
+.columna-escritorio-8,
+.columna-smartphone-9,
+.columna-escritorio-9,
+.columna-smartphone-10,
+.columna-escritorio-10,
+.columna-smartphone-11,
+.columna-escritorio-11,
+.columna-smartphone-12,
+.columna-escritorio-12 {
+    /* Posicionamiento a la izquierda */
+    position: relative;
+    float: left;
+}
+
+.columna-smartphone-1 > *,
+.columna-escritorio-1 > *,
+.columna-smartphone-2 > *,
+.columna-escritorio-2 > *,
+.columna-smartphone-3 > *,
+.columna-escritorio-3 > *,
+.columna-smartphone-4 > *,
+.columna-escritorio-4 > *,
+.columna-smartphone-5 > *,
+.columna-escritorio-5 > *,
+.columna-smartphone-6 > *,
+.columna-escritorio-6 > *,
+.columna-smartphone-7 > *,
+.columna-escritorio-7 > *,
+.columna-smartphone-8 > *,
+.columna-escritorio-8 > *,
+.columna-smartphone-9 > *,
+.columna-escritorio-9 > *,
+.columna-smartphone-10 > *,
+.columna-escritorio-10 > *,
+.columna-smartphone-11 > *,
+.columna-escritorio-11 > *,
+.columna-smartphone-12 > *,
+.columna-escritorio-12 > * {
+    /* Margen interno de cada columna */
+    margin-right: 10px;
+    margin-left: 10px;
+}

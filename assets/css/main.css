@@ -1,0 +1,21 @@
+/**
+ * ESTILOS PARA LOS TEXTOS
+ * */
+
+/* Alineación al centro */
+.centrado { text-align: center; }
+
+/* Alineación justificada */
+.justificado { text-align: justify; }
+
+/**
+ * ESTILOS PARA LA VISIBILIDAD
+ * */
+ .oculto { display: none; }
+ 
+@media (max-width: 767px) {
+    .oculto-smartphone { display: none; }
+}
+@media (min-width: 768px) {
+    .oculto-escritorio { display: none; }
+}
