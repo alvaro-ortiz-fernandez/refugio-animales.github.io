@@ -165,36 +165,15 @@ body {
     /* Posicionamiento a la izquierda */
     position: relative;
     float: left;
+    /* Margen interno de cada columna */
+    padding: 0;
 }
 
-.columna-smartphone-1 > *,
-.columna-escritorio-1 > *,
-.columna-smartphone-2 > *,
-.columna-escritorio-2 > *,
-.columna-smartphone-3 > *,
-.columna-escritorio-3 > *,
-.columna-smartphone-4 > *,
-.columna-escritorio-4 > *,
-.columna-smartphone-5 > *,
-.columna-escritorio-5 > *,
-.columna-smartphone-6 > *,
-.columna-escritorio-6 > *,
-.columna-smartphone-7 > *,
-.columna-escritorio-7 > *,
-.columna-smartphone-8 > *,
-.columna-escritorio-8 > *,
-.columna-smartphone-9 > *,
-.columna-escritorio-9 > *,
-.columna-smartphone-10 > *,
-.columna-escritorio-10 > *,
-.columna-smartphone-11 > *,
-.columna-escritorio-11 > *,
-.columna-smartphone-12 > *,
-.columna-escritorio-12 > * {
-    /* Margen interno de cada columna */
-    margin-right: 10px;
-    margin-left: 10px;
-}
+/**
+ * Clases que usaremos para cada bloque dentro de una columna
+ * */
+ .celda { padding: 0 10px; }
+ .bloque-texto { padding: 15px 30px; }
 
 /**
  * Estilos para los márgenes

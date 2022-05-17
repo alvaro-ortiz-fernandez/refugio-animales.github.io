@@ -13,13 +13,13 @@
     <div class="contenedor bg-gray">
         <div class="fila">
             <div class="columna-smartphone-12">
-                <div class="bg-yellow">
-                    <p class="sin-margen-inferior">NAVBAR</p>
+                <div class="celda">
+                    <p class="sin-margen-inferior bg-yellow">NAVBAR</p>
                 </div>
             </div>
             <div class="columna-smartphone-12">
-                <div class="bg-orange">
-                    <p class="sin-margen-superior">BUSCADOR</p>
+                <div class="celda">
+                    <p class="sin-margen-superior bg-orange">BUSCADOR</p>
                 </div>
             </div>
         </div>
@@ -32,12 +32,16 @@
     <div id="listado" class="fila">
         <!-- Imagen 1 -->
         <div class="columna-escritorio-6 columna-smartphone-12">
-            <div class="bg-blue" style="min-height: 200px"></div>
+            <div class="celda">
+                <div class="bg-blue" style="min-height: 200px"></div>
+            </div>
         </div>
         
         <!-- Imagen 2 (Oculta en dispositivos móviles) -->
         <div class="columna-escritorio-6 oculto-smartphone">
-            <div class="bg-green" style="min-height: 200px"></div>
+            <div class="celda">
+                <div class="bg-green" style="min-height: 200px"></div>
+            </div>
         </div>
 
         <!-- Texto -->
@@ -55,22 +59,30 @@
         <div class="fila">
             <!-- Imagen 1 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
-                <div class="bg-red" style="min-height: 200px"></div>
+                <div class="celda">
+                    <div class="bg-red" style="min-height: 200px"></div>
+                </div>
             </div>
 
             <!-- Imagen 2 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
-                <div class="bg-black" style="min-height: 200px"></div>
+                <div class="celda">
+                    <div class="bg-black" style="min-height: 200px"></div>
+                </div>
             </div>
 
             <!-- Imagen 3 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
-                <div class="bg-yellow" style="min-height: 200px"></div>
+                <div class="celda">
+                    <div class="bg-yellow" style="min-height: 200px"></div>
+                </div>
             </div>
 
             <!-- Imagen 4 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
-                <div class="bg-red" style="min-height: 200px"></div>
+                <div class="celda">
+                    <div class="bg-red" style="min-height: 200px"></div>
+                </div>
             </div>
         </div>
 
@@ -89,9 +101,9 @@
     <!-- Últimas noticias de la organización -->
     <div id="ultimas-noticias" class="fila">
         <!-- Noticia izquierda -->
-        <div class="columna-escritorio-3 columna-smartphone-12 bg-lightblue">
-            <div class="fila centrado">
-                <div class="columna-smartphone-12">
+        <div class="columna-escritorio-3 columna-smartphone-12">
+            <div class="celda">
+                <div class="bloque-texto justificado bg-lightblue">
                     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>
                 </div>
@@ -99,12 +111,12 @@
         </div>
         
         <!-- Noticia derecha (Oculto en dispositivos móviles) -->
-        <div class="columna-escritorio-9 oculto-smartphone bg-blue">
+        <div class="columna-escritorio-9 oculto-smartphone">
             <!-- Texto -->
-            <div class="fila">
-                <div class="columna-escritorio-6 columna-escritorio-offset-2 columna-smartphone-10 columna-escritorio-offset-1">
+            <div class="celda">
+                <div class="bloque-texto justificado bg-blue">
                     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>
                 </div>
             </div>
         </div>
@@ -117,30 +129,44 @@
     <div id="contacto">
         <div class="fila">
             <!-- Título -->
-            <div class="columna-smartphone-12 centrado">
-                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
+            <div class="columna-smartphone-12">
+                <div class="celda">
+                    <div class="bloque-texto centrado">
+                        <h1 class="sin-margen-inferior">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
+                    </div>
+                </div>
             </div>
         </div>
         
         <div class="fila">
             <div class="columna-escritorio-4 columna-smartphone-12">
                 <!-- Bloque 1 -->
-                <div class="bg-yellow" style="min-height: 50px"></div>
+                <div class="celda">
+                    <div class="bg-yellow" style="min-height: 50px"></div>
+                </div>
                 <br>
 
                 <!-- Bloque 2 -->
-                <div class="bg-orange" style="min-height: 50px"></div>
+                <div class="celda">
+                    <div class="bg-orange" style="min-height: 50px"></div>
+                </div>
                 <br>
-                
+                    
                 <!-- Bloque 3 -->
-                <div class="bg-yellow" style="min-height: 50px"></div>
+                <div class="celda">
+                    <div class="bg-yellow" style="min-height: 50px"></div>
+                </div>
                 <br>
-                
+                    
                 <!-- Bloque 4 -->
-                <div class="bg-orange" style="min-height: 50px"></div>
+                <div class="celda">
+                    <div class="bg-orange" style="min-height: 50px"></div>
+                </div>
             </div>
             <div class="columna-escritorio-8 columna-smartphone-12">
-                <div class="bg-lightblue" style="min-height: 254px"></div>
+                <div class="celda">
+                    <div class="bg-lightblue" style="min-height: 254px"></div>
+                </div>
             </div>
         </div>
     </div>

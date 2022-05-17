@@ -19,7 +19,6 @@
 .a-la-derecha { text-align: right; }
 .justificado { text-align: justify; }
 
-
 /**
  * ESTILOS PARA LAS IMÁGENES
  * 
@@ -59,6 +58,21 @@
     padding-bottom: calc(50% - 10px);
 }
 
+/* Ratio de 16:9 */
+.imagen-cuadrada.ratio-16-9:after {
+    padding-bottom: calc((100% * (9 / 16)) - 10px);
+}
+
+/* Ratio de 4:3 */
+.imagen-cuadrada.ratio-4-3:after {
+    padding-bottom: calc((100% * (3 / 4)) - 10px);
+}
+
+/* Altura al doble de la anchura */
+.imagen-cuadrada.altura-doble img {
+    height: calc(200% + 20px);
+}
+
 /* Altura al doble de la anchura */
 .imagen-cuadrada.altura-doble img {
     height: calc(200% + 20px);
@@ -68,7 +82,7 @@
  * BUSCADOR
  * */
 .buscador {
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
     border: 1px solid lightgray;
     border-radius: 3px;
     padding: 6px 10px 6px 30px;
@@ -76,13 +90,6 @@
 .buscador:before {
     content: url("../icons/buscar.svg");
 }
-
-/**
- * ICONOS
- * */
- .icono {
-
- }
 
 /**
  * ICONO DE CARGA
