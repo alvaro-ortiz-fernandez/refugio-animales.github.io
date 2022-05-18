@@ -183,3 +183,4 @@ body {
 .sin-margen-inferior  { margin-bottom: 0 }
 .sin-margen-izquierdo { margin-left: 0 }
 .sin-margen-derecho   { margin-right: 0 }
+.margen-horizontal-10 { margin-left: 10px; margin-right: 10px; }

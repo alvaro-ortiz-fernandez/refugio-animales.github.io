@@ -18,6 +18,8 @@
 .a-la-izquierda { text-align: left; }
 .a-la-derecha { text-align: right; }
 .justificado { text-align: justify; }
+.mover-a-la-izquierda { float: left; }
+.mover-a-la-derecha { float: right; }
 
 /**
  * ESTILOS PARA LAS IMÁGENES
