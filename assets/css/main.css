@@ -81,6 +81,16 @@
 }
 
 /**
+ * CUADROS DE TEXTO
+ * */
+ .input-texto {
+    width: calc(100% - 22px);
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+/**
  * BUSCADOR
  * */
 .buscador {
@@ -111,6 +121,23 @@
 }
 
 
+/**
+ * CHAT
+ * */
+.avatar {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: blue;
+}
+.chat {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: blue;
+}
+
 
 
 
@@ -120,5 +147,6 @@
 .bg-blue { background: blue; }
 .bg-lightblue { background: lightblue; }
 .bg-green { background: green; }
+.bg-white { background: white; }
 .bg-gray { background: lightgray; }
 .bg-black { background: black; }

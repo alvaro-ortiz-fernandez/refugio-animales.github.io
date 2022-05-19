@@ -37,6 +37,14 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
+    
+    .contenedor-izquierdo {
+        margin-left: -10px;
+    }
+    
+    .contenedor-derecho {
+        margin-right: -10px;
+    }
 }
 @media (min-width: 768px) {
     .contenedor {
@@ -44,6 +52,14 @@ body {
         margin-right: -50px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+    
+    .contenedor-izquierdo {
+        margin-left: -50px;
+    }
+    
+    .contenedor-derecho {
+        margin-right: -50px;
     }
 }
 
