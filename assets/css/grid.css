@@ -37,12 +37,9 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
-    .contenedor-izquierdo {
+
+    .contenedor-smartphone {
         margin-left: -10px;
-    }
-    
-    .contenedor-derecho {
         margin-right: -10px;
     }
 }
@@ -52,6 +49,13 @@ body {
         margin-right: -50px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .contenedor-smartphone {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .contenedor-izquierdo {
@@ -188,15 +192,14 @@ body {
 /**
  * Clases que usaremos para cada bloque dentro de una columna
  * */
- .celda { padding: 0 10px; }
- .bloque-texto { padding: 15px 30px; }
+.celda { padding: 0 10px; }
+.bloque-texto { padding: 15px 30px; }
 
 /**
  * Estilos para los márgenes
  * */
-.sin-margen           { margin: 0 }
-.sin-margen-superior  { margin-top: 0 }
-.sin-margen-inferior  { margin-bottom: 0 }
-.sin-margen-izquierdo { margin-left: 0 }
-.sin-margen-derecho   { margin-right: 0 }
-.margen-horizontal-10 { margin-left: 10px; margin-right: 10px; }
+.sin-margen            { margin: 0 }
+.sin-margen-superior   { margin-top: 0 }
+.sin-margen-inferior   { margin-bottom: 0 }
+.sin-margen-izquierdo  { margin-left: 0 }
+.margen-horizontal-10  { margin-left: 10px; margin-right: 10px; }
