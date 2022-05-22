@@ -267,9 +267,10 @@ input:invalid:not(:placeholder-shown) {
     position: fixed;
     z-index: 1000;
     display: none;
-    width: 100%;
+    width: calc(100% + 60px);
     height: 100vh;
-    background: rgb(97 78 255 / 0%);
+    margin-left: -60px;
+    background: rgb(255 255 255 / 0%);
     transition: 1s;
 }
 

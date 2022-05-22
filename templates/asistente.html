@@ -11,6 +11,9 @@
     <title>Asistente de adopción</title>
 </head>
 <body>
+    <!-- Pantalla de transición -->
+    <div id="transicion" class="transicion"></div>
+
     <!-- 1º Paso - Formulario -->
     <div id="formulario" class="contenedor bg-purpura-1">
         <br>
@@ -89,15 +92,16 @@
                 <div class="celda centrado">
                     <button class="boton blanco bg-purpura-4 bg-hover-purpura-5"
                             onclick="document.getElementById('transicion').style.display = 'block';
-                                    document.getElementById('transicion').style.background = 'rgb(97 78 255 / 100%)';
+                                    document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
+                                    document.getElementById('transicion').style.background = 'rgb(255 255 255 / 100%)';
                                     setTimeout(function() {
                                         document.getElementById('formulario').style.display = 'none';
-                                        document.getElementById('transicion').style.background = 'rgb(97 78 255 / 0%)';
+                                        document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
                                         document.getElementById('seguimiento').style.display = 'block';
-                                    }, 500);
+                                    }, 1000);
                                     setTimeout(function() {
                                         document.getElementById('transicion').style.display = 'none';
-                                    }, 1000);">
+                                    }, 2000);">
                         Iniciar adopción
                     </button>
                 </div>
@@ -106,9 +110,6 @@
 
         <br>
     </div>
-
-    <!-- Pantalla de transición -->
-    <div id="transicion" class="transicion"></div>
 
     <!-- 2º Paso - Seguimiento -->
     <div id="seguimiento" class="oculto">
