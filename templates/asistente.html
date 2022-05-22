@@ -21,7 +21,9 @@
                 <div class="fila">
                     <!-- Botón de retroceso -->
                     <div class="columna-smartphone-3">
-                        <img class="icono" src="../assets/icons/atras-purpura.svg" />
+                        <a href="detalle.html">
+                            <img class="icono" src="../assets/icons/atras-purpura.svg" />
+                        </a>
                     </div>
                     <!-- Nombre del animal -->
                     <div class="columna-smartphone-6">
@@ -42,19 +44,23 @@
 
                             <!-- Nombre -->
                             <label for="nombre">Nombre</label>
-                            <input class="border-hover-purpura-3" type="text" id="nombre" placeholder="Nombre" />
+                            <input class="border-hover-purpura-3" type="text" id="nombre" placeholder="Nombre"
+                                required pattern="[A-Za-z]*" />
                            
                             <!-- Apellidos -->
                             <label for="apellidos">Apellidos</label>
-                            <input class="border-hover-purpura-3" type="text" id="apellidos" placeholder="Apellidos" />
+                            <input class="border-hover-purpura-3" type="text" id="apellidos" placeholder="Apellidos"
+                                required pattern="[A-Za-z]*" />
                             
                             <!-- Email -->
                             <label for="email">Email</label>
-                            <input class="border-hover-purpura-3" type="email" id="email" placeholder="Email" />
+                            <input class="border-hover-purpura-3" type="email" id="email" placeholder="Email"
+                                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                             
                             <!-- Teléfono -->
                             <label for="telefono">Teléfono</label>
-                            <input class="border-hover-purpura-3 sin-margen-inferior" type="tel" id="telefono" placeholder="Teléfono" />
+                            <input class="border-hover-purpura-3 sin-margen-inferior" type="tel" id="telefono" placeholder="Teléfono"
+                                required pattern="[0-9]{9}" />
                             
                             <br>
                             <br>
@@ -81,8 +87,19 @@
         <div class="fila">
             <div id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
                 <div class="celda centrado">
-                    <input class="boton blanco bg-purpura-4 bg-hover-purpura-5" type="button" value="Iniciar adopción"
-                        onclick="document.getElementById('formulario').style.display = 'none'; document.getElementById('seguimiento').style.display = 'block'" />
+                    <button class="boton blanco bg-purpura-4 bg-hover-purpura-5"
+                            onclick="document.getElementById('transicion').style.display = 'block';
+                                    document.getElementById('transicion').style.background = 'rgb(97 78 255 / 100%)';
+                                    setTimeout(function() {
+                                        document.getElementById('formulario').style.display = 'none';
+                                        document.getElementById('transicion').style.background = 'rgb(97 78 255 / 0%)';
+                                        document.getElementById('seguimiento').style.display = 'block';
+                                    }, 500);
+                                    setTimeout(function() {
+                                        document.getElementById('transicion').style.display = 'none';
+                                    }, 1000);">
+                        Iniciar adopción
+                    </button>
                 </div>
             </div>
         </div>
@@ -90,9 +107,12 @@
         <br>
     </div>
 
+    <!-- Pantalla de transición -->
+    <div id="transicion" class="transicion"></div>
+
     <!-- 2º Paso - Seguimiento -->
     <div id="seguimiento" class="oculto">
-        <div class="fila">
+        <div class="fila sin-margen-inferior">
             <!-- Resumen y acciones -->
             <div id="resumen-seguimiento" class="columna-escritorio-8 columna-smartphone-12">
                 <br>
@@ -102,11 +122,13 @@
                         <div class="fila">
                             <!-- Botón de retroceso -->
                             <div class="columna-smartphone-3">
-                                <img src="../assets/icons/atras.svg" />
+                                <a href="detalle.html">
+                                    <img class="icono" src="../assets/icons/atras-purpura.svg" />
+                                </a>
                             </div>
                             <!-- Nombre del animal -->
                             <div class="columna-smartphone-6">
-                                <h4 class="sin-margen centrado">Chispitas</h4>
+                                <h3 class="sin-margen centrado purpura-4">Chispitas</h3>
                             </div>
                         </div>
 
@@ -126,15 +148,15 @@
                             <div class="columna-smartphone-12">
                                 <div class="fila">
                                     <!-- Título -->
-                                    <div class="columna-smartphone-6">
+                                    <div class="columna-escritorio-8 columna-smartphone-6">
                                         <h4 class="sin-margen-inferior">Estado de la adopción</h4>
                                         <span style="color: green">En curso</span>
                                     </div>
                                     
                                     <!-- Botón de anular proceso de adopción -->
-                                    <div class="columna-smartphone-6 a-la-derecha">
+                                    <div class="columna-escritorio-4 columna-smartphone-6 a-la-derecha">
                                         <br>
-                                        <input type="button" value="Iniciar adopción" />
+                                        <button class="boton blanco bg-purpura-4 bg-hover-purpura-5">Cancelar adopción</button>
                                     </div>
                                     
                                     <!-- Descripción -->
@@ -143,15 +165,15 @@
                                     </div>
                                 </div>
 
-                                <div class="fila">
+                                <div class="fila sin-margen-inferior">
                                     <!-- Teléfono -->
-                                    <div class="columna-smartphone-3">
+                                    <div class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
-                                                <div class="celda">
-                                                    <div class="fila bg-lightblue">
-                                                        <div class="columna-smartphone-3 centrado">
-                                                            <img src="../assets/icons/llamada.svg" />
+                                                <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-inferior-10">
+                                                    <div class="fila sin-margen-inferior">
+                                                        <div class="columna-smartphone-3">
+                                                            <img class="icono" src="../assets/icons/llamada-purpura.svg" />
                                                         </div>
                                                         <div class="columna-smartphone-9">
                                                             <h4 class="sin-margen">Llamar</h4>
@@ -164,13 +186,13 @@
                                     </div>
                                     
                                     <!-- Adjuntar documentos -->
-                                    <div class="columna-smartphone-3">
+                                    <div class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
-                                                <div class="celda">
-                                                    <div class="fila bg-gray">
-                                                        <div class="columna-smartphone-3 centrado">
-                                                            <img src="../assets/icons/documentos.svg" />
+                                                <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-inferior-10">
+                                                    <div class="fila sin-margen-inferior">
+                                                        <div class="columna-smartphone-3">
+                                                            <img class="icono" src="../assets/icons/documentos-purpura.svg" />
                                                         </div>
                                                         <div class="columna-smartphone-9">
                                                             <h4 class="sin-margen">Documentación</h4>
@@ -181,15 +203,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                </div>
+
+                                <div class="fila sin-margen-inferior">
                                     <!-- Seleccionar fecha -->
-                                    <div class="columna-smartphone-3 bg-lightblue">
+                                    <div class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
-                                                <div class="celda">
-                                                    <div class="fila bg-lightblue">
-                                                        <div class="columna-smartphone-3 centrado">
-                                                            <img src="../assets/icons/documentos.svg" />
+                                                <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-superior-10">
+                                                    <div class="fila sin-margen-inferior">
+                                                        <div class="columna-smartphone-3">
+                                                            <img class="icono" src="../assets/icons/fecha-purpura.svg" />
                                                         </div>
                                                         <div class="columna-smartphone-9">
                                                             <h4 class="sin-margen">Fecha</h4>
@@ -202,13 +226,13 @@
                                     </div>
                                     
                                     <!-- Seleccionar ubicación -->
-                                    <div class="columna-smartphone-3">
+                                    <div class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
-                                                <div class="celda">
-                                                    <div class="fila bg-gray">
-                                                        <div class="columna-smartphone-3 centrado">
-                                                            <img src="../assets/icons/documentos.svg" />
+                                                <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-superior-10">
+                                                    <div class="fila sin-margen-inferior">
+                                                        <div class="columna-smartphone-3">
+                                                            <img class="icono" src="../assets/icons/ubicacion-purpura.svg" />
                                                         </div>
                                                         <div class="columna-smartphone-9">
                                                             <h4 class="sin-margen">Ubicación</h4>
@@ -228,53 +252,62 @@
 
             <!-- Chat -->
             <div id="chat-seguimiento" class="columna-escritorio-4 columna-smartphone-12">
-                <div class="contenedor-derecho contenedor-smartphone bg-lightblue">
+                <div class="contenedor-derecho contenedor-smartphone sin-margen-izquierdo conversacion bg-purpura-1">
                     <br>
 
-                    <div class="fila">
+                    <div class="fila contenedor-interno-derecho sin-margen-inferior">
                         <div class="columna-smartphone-12">
                             <div class="celda">
                                 <!-- 1º Conversación -->
                                 <div class="fila">
                                     <div class="columna-smartphone-12">
-                                        <div class="avatar">
-                                            <img src="../assets/icons/usuario.svg" />
-                                        </div>
-                                        <div class="chat">
-                                            <span>Lorem ipsum dolor</span>
+                                        <img class="avatar mover-a-la-izquierda" src="../assets/images/avatar-2.png" />
+                                        
+                                        <div class="chat mover-a-la-derecha bg-purpura-4 blanco">
+                                            <span>Lorem ipsum dolor abc lorem ipsum dolor abc</span>
                                         </div>
                                     </div>
                                 </div>
+
+                                <br>
                                 
                                 <!-- 2º Conversación -->
                                 <div class="fila">
                                     <div class="columna-smartphone-12">
-                                        <div class="avatar">
-                                            <img src="../assets/icons/usuario.svg" />
-                                        </div>
-                                        <div class="chat">
+                                        <div class="chat mover-a-la-izquierda bg-blanco negro">
                                             <span>Lorem ipsum dolor</span>
                                         </div>
+
+                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
                                     </div>
                                 </div>
+
+                                <br>
                                 
                                 <!-- Fecha -->
-                                <div></div>
+                                <div class="fila">
+                                    <div class="columna-smartphone-12 centrado">
+                                        <span class="fecha-chat bg-purpura-4 blanco">
+                                            - 12 / 06 / 2022 -
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <br>
                                 
                                 <!-- 3º Conversación -->
                                 <div class="fila">
                                     <div class="columna-smartphone-12">
-                                        <div class="avatar">
-                                            <img src="../assets/icons/usuario.svg" />
-                                        </div>
-                                        <div class="chat">
+                                        <div class="chat mover-a-la-izquierda bg-blanco negro">
                                             <span>Lorem ipsum dolor</span>
                                         </div>
+
+                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
                                     </div>
                                 </div>
                                 
                                 <!-- Cuadro de texto -->
-                                <div></div>
+                                <input type="text" name="nuevo-mensaje" class="nuevo-mensaje blanco bg-purpura-4" placeholder="Introduzca un mensaje...">
                             </div>
                         </div>
                     </div>

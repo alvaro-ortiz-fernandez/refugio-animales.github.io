@@ -65,6 +65,10 @@ body {
     .contenedor-derecho {
         margin-right: -50px;
     }
+    
+    .contenedor-interno-derecho {
+        padding-right: 50px;
+    }
 }
 
 /**
@@ -196,10 +200,21 @@ body {
 .bloque-texto { padding: 15px 30px; }
 
 /**
+ * Estilos para los tamaños
+ * */
+.anchura-completa { width: 100% }
+.altura-completa  { height: 100% }
+
+/**
  * Estilos para los márgenes
  * */
 .sin-margen            { margin: 0 !important }
 .sin-margen-superior   { margin-top: 0 !important }
 .sin-margen-inferior   { margin-bottom: 0 !important }
 .sin-margen-izquierdo  { margin-left: 0 !important }
+.sin-margen-derecho    { margin-right: 0 !important }
+.margen-superior-10    { margin-top: 10px !important; }
+.margen-inferior-10    { margin-bottom: 10px !important; }
+.margen-izquierdo-10   { margin-left: 10px !important; }
+.margen-derecho-10     { margin-right: 10px !important; }
 .margen-horizontal-10  { margin-left: 10px !important; margin-right: 10px !important; }

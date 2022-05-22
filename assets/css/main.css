@@ -125,12 +125,17 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s;
     outline: none;
 }
-
 label {
     font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
     display: inline-block;
+}
+input:valid:focus {
+    border-color: #9137FF !important;
+}
+input:invalid:not(:placeholder-shown) {
+    border-color: red !important;
 }
 
 /**
@@ -163,7 +168,7 @@ label {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    transition-duration: 0.5s;
+    transition: 0.5s;
 }
 
 
@@ -171,8 +176,8 @@ label {
  * ICONOS
  * */
 .icono {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     cursor: pointer;
 }
 
@@ -192,20 +197,80 @@ label {
 
 
 /**
+ * TARJETAS
+ * */
+.tarjeta {
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tarjeta span {
+    font-size: 12px;
+}
+.tarjeta img {
+    margin-top: 10px;
+}
+
+
+/**
  * CHAT
  * */
+@media (min-width: 768px) {
+    .conversacion {
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        width: 33.3%;
+    }
+}
 .avatar {
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
     border-radius: 20px;
-    background: blue;
 }
 .chat {
     display: inline-block;
-    margin-left: 20px;
-    padding: 10px 20px;
-    background: blue;
+    padding: 13px 20px;
+    width: calc(100% - 110px);
+}
+.fecha-chat {
+    font-size: 12px;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+.nuevo-mensaje {
+    width: calc(100% + 30px) !important;
+    margin: 0 0 0 -20px !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-image: url('../icons/enviar-blanco.svg') !important;
+    background-size: 24px 24px !important;
+    background-position: 15px 15px !important; 
+    background-repeat: no-repeat !important;
+    padding: 20px 20px 20px 50px !important;
+}
+@media (min-width: 768px) {
+    .nuevo-mensaje {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+
+/**
+ * TRANSICIONES
+ * */
+.transicion {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgb(97 78 255 / 0%);
+    transition: 1s;
 }
 
 
@@ -218,9 +283,17 @@ label {
 .purpura-3 { color: #B476FF }
 .purpura-2 { color: #D6B3FF }
 .purpura-1 { color: #F0E3FF }
+.blanco    { color: white }
+.negro     { color: black }
 
-.blanco { color: white }
-.negro  { color: black }
+.hover-purpura-6:hover { color: #4C1194 }
+.hover-purpura-5:hover { color: #681BC6 }
+.hover-purpura-4:hover { color: #9137FF }
+.hover-purpura-3:hover { color: #B476FF }
+.hover-purpura-2:hover { color: #D6B3FF }
+.hover-purpura-1:hover { color: #F0E3FF }
+.hover-blanco:hover    { color: white }
+.hover-negro:hover     { color: black }
 
 .bg-purpura-6 { background: #4C1194 }
 .bg-purpura-5 { background: #681BC6 }
@@ -228,6 +301,8 @@ label {
 .bg-purpura-3 { background: #B476FF }
 .bg-purpura-2 { background: #D6B3FF }
 .bg-purpura-1 { background: #F0E3FF }
+.bg-blanco    { background: white }
+.bg-negro     { background: black }
 
 .bg-hover-purpura-6:hover { background: #4C1194 }
 .bg-hover-purpura-5:hover { background: #681BC6 }
@@ -243,9 +318,11 @@ label {
 .border-hover-purpura-2:hover { border-color: #D6B3FF }
 .border-hover-purpura-1:hover { border-color: #F0E3FF }
 
-.bg-blanco { background: white }
-.bg-negro  { background: black }
-
+.bg-purpura-4::placeholder,
+.bg-purpura-5::placeholder,
+.bg-purpura-6::placeholder {
+    color: rgb(200, 200, 200)
+}
 
 /**
  * SOMBRAS
