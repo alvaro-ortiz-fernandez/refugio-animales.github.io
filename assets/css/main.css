@@ -1,7 +1,18 @@
 /**
+ * ESTILOS PARA LAS FUENTES
+ * */
+body {
+    font-family: "Poppins", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+/**
  * ESTILOS PARA LA VISIBILIDAD
  * */
- .oculto { display: none; }
+.oculto { display: none; }
  
 @media (max-width: 767px) {
     .oculto-smartphone { display: none; }
@@ -15,6 +26,7 @@
  * 
  * Alineación */
 .centrado { text-align: center; }
+.centrado-vertical { vertical-align: middle; }
 .a-la-izquierda { text-align: left; }
 .a-la-derecha { text-align: right; }
 .justificado { text-align: justify; }
@@ -60,19 +72,19 @@
     padding-bottom: calc(50% - 10px);
 }
 
-/* Ratio de 16:9 */
-.imagen-cuadrada.ratio-16-9:after {
-    padding-bottom: calc((100% * (9 / 16)) - 10px);
-}
-
 /* Ratio de 4:3 */
 .imagen-cuadrada.ratio-4-3:after {
     padding-bottom: calc((100% * (3 / 4)) - 10px);
 }
 
-/* Altura al doble de la anchura */
-.imagen-cuadrada.altura-doble img {
-    height: calc(200% + 20px);
+/* Ratio de 16:9 */
+.imagen-cuadrada.ratio-16-9:after {
+    padding-bottom: calc((100% * (9 / 16)) - 10px);
+}
+
+/* Ratio de 3:1 */
+.imagen-cuadrada.ratio-3-1:after {
+    padding-bottom: calc((100% * (1 / 3)) - 10px);
 }
 
 /* Altura al doble de la anchura */
@@ -80,14 +92,9 @@
     height: calc(200% + 20px);
 }
 
-/**
- * CUADROS DE TEXTO
- * */
- .input-texto {
-    width: calc(100% - 22px);
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    padding: 6px 10px;
+/* Altura al doble de la anchura */
+.imagen-cuadrada.altura-doble img {
+    height: calc(200% + 20px);
 }
 
 /**
@@ -104,8 +111,71 @@
 }
 
 /**
- * ICONO DE CARGA
+ * FORMULARIOS
  * */
+ input[type=text],
+ input[type=email],
+ input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 3px;
+    transition: 0.5s;
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/**
+ * CHECKBOXES
+ * */
+.checkbox input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+}
+.checkbox label {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.checkbox input[type=checkbox],
+.checkbox label {
+    cursor: pointer;
+}
+
+
+/**
+ * BOTONES
+ * */
+.boton {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+
+/**
+ * ICONOS
+ * */
+.icono {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
 @keyframes cargando {
     to { transform: rotate(360deg); }
 }
@@ -139,14 +209,58 @@
 }
 
 
+/**
+ * COLORES
+ * */
+.purpura-6 { color: #4C1194 }
+.purpura-5 { color: #681BC6 }
+.purpura-4 { color: #9137FF }
+.purpura-3 { color: #B476FF }
+.purpura-2 { color: #D6B3FF }
+.purpura-1 { color: #F0E3FF }
+
+.blanco { color: white }
+.negro  { color: black }
+
+.bg-purpura-6 { background: #4C1194 }
+.bg-purpura-5 { background: #681BC6 }
+.bg-purpura-4 { background: #9137FF }
+.bg-purpura-3 { background: #B476FF }
+.bg-purpura-2 { background: #D6B3FF }
+.bg-purpura-1 { background: #F0E3FF }
+
+.bg-hover-purpura-6:hover { background: #4C1194 }
+.bg-hover-purpura-5:hover { background: #681BC6 }
+.bg-hover-purpura-4:hover { background: #9137FF }
+.bg-hover-purpura-3:hover { background: #B476FF }
+.bg-hover-purpura-2:hover { background: #D6B3FF }
+.bg-hover-purpura-1:hover { background: #F0E3FF }
+
+.border-hover-purpura-6:hover { border-color: #4C1194 }
+.border-hover-purpura-5:hover { border-color: #681BC6 }
+.border-hover-purpura-4:hover { border-color: #9137FF }
+.border-hover-purpura-3:hover { border-color: #B476FF }
+.border-hover-purpura-2:hover { border-color: #D6B3FF }
+.border-hover-purpura-1:hover { border-color: #F0E3FF }
+
+.bg-blanco { background: white }
+.bg-negro  { background: black }
 
 
-.bg-yellow { background: yellow; }
-.bg-orange { background: orange; }
-.bg-red { background: red; }
-.bg-blue { background: blue; }
-.bg-lightblue { background: lightblue; }
-.bg-green { background: green; }
-.bg-white { background: white; }
-.bg-gray { background: lightgray; }
-.bg-black { background: black; }
+/**
+ * SOMBRAS
+ * */
+.sombra-centrada {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+
+.bg-yellow { background: yellow }
+.bg-orange { background: orange }
+.bg-red { background: red }
+.bg-blue { background: blue }
+.bg-lightblue { background: lightblue }
+.bg-green { background: green }
+.bg-white { background: white }
+.bg-gray { background: lightgray }
+.bg-black { background: black }

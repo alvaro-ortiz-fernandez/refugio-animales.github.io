@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <title>Asistente de adopción</title>
 </head>
 <body>
     <!-- 1º Paso - Formulario -->
-    <div id="formulario" class="contenedor bg-gray">
+    <div id="formulario" class="contenedor bg-purpura-1">
         <br>
 
         <!-- Cabecera -->
@@ -19,11 +21,11 @@
                 <div class="fila">
                     <!-- Botón de retroceso -->
                     <div class="columna-smartphone-3">
-                        <img src="../assets/icons/atras.svg" />
+                        <img class="icono" src="../assets/icons/atras-purpura.svg" />
                     </div>
                     <!-- Nombre del animal -->
                     <div class="columna-smartphone-6">
-                        <h4 class="sin-margen centrado">Chispitas</h4>
+                        <h3 class="sin-margen centrado purpura-4">Chispitas</h3>
                     </div>
                 </div>
             </div>
@@ -31,33 +33,43 @@
         
         <!-- Formulario -->
         <div class="fila">
-            <div id="formulario-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12 bg-white">
+            <div id="formulario-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12 bg-blanco sombra-centrada">
                 <div class="fila">
                     <div class="columna-escritorio-6 columna-escritorio-offset-3 columna-smartphone-12">
                         <div class="celda">
                             <!-- Título -->
-                            <h2 class="centrado">Solucitud de adopción</h2>
+                            <h1 class="centrado">Solucitud de adopción</h1>
 
-                            <!-- Inputs a rellenar -->
-                            <input class="input-texto" type="text" placeholder="Nombre" />
-                            <input class="input-texto" type="text" placeholder="Apellidos" />
-                            <input class="input-texto" type="email" placeholder="Email" />
-                            <input class="input-texto" type="tel" placeholder="Teléfono" />
-
+                            <!-- Nombre -->
+                            <label for="nombre">Nombre</label>
+                            <input class="border-hover-purpura-3" type="text" id="nombre" placeholder="Nombre" />
+                           
+                            <!-- Apellidos -->
+                            <label for="apellidos">Apellidos</label>
+                            <input class="border-hover-purpura-3" type="text" id="apellidos" placeholder="Apellidos" />
+                            
+                            <!-- Email -->
+                            <label for="email">Email</label>
+                            <input class="border-hover-purpura-3" type="email" id="email" placeholder="Email" />
+                            
+                            <!-- Teléfono -->
+                            <label for="telefono">Teléfono</label>
+                            <input class="border-hover-purpura-3 sin-margen-inferior" type="tel" id="telefono" placeholder="Teléfono" />
+                            
                             <br>
                             <br>
 
                             <!-- Aceptación de términos -->
-                            <div class="centrado">
-                                <input type="checkbox" />
-                                <span>Acepto los términos legales</span>
+                            <div class="checkbox centrado">
+                                <input id="terminos" class="centrado-vertical" type="checkbox" />
+                                <label for="terminos" class="centrado-vertical">Acepto los términos legales</label>
                             </div>
                             
                             <br>
 
                             <!-- Foto del animal a adoptar -->
-                            <div class="imagen-cuadrada ratio-16-9">
-                                <img src="../assets/images/perro.png"/>
+                            <div class="imagen-cuadrada ratio-3-1">
+                                <img src="../assets/images/conejo.jpg"/>
                             </div>
                         </div>
                     </div>
@@ -67,9 +79,10 @@
         
         <!-- Botón de adopción -->
         <div class="fila">
-            <div id="boton-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12">
+            <div id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
                 <div class="celda centrado">
-                    <input type="button" value="Iniciar adopción" />
+                    <input class="boton blanco bg-purpura-4 bg-hover-purpura-5" type="button" value="Iniciar adopción"
+                        onclick="document.getElementById('formulario').style.display = 'none'; document.getElementById('seguimiento').style.display = 'block'" />
                 </div>
             </div>
         </div>
@@ -78,7 +91,7 @@
     </div>
 
     <!-- 2º Paso - Seguimiento -->
-    <div id="seguimiento">
+    <div id="seguimiento" class="oculto">
         <div class="fila">
             <!-- Resumen y acciones -->
             <div id="resumen-seguimiento" class="columna-escritorio-8 columna-smartphone-12">
@@ -103,7 +116,7 @@
                                 <div class="contenedor-smartphone">
                                     <div class="fila sin-margen-inferior">
                                         <div class="imagen-cuadrada ratio-16-9">
-                                            <img src="../assets/images/perro.png"/>
+                                            <img src="../assets/images/conejo.jpg"/>
                                         </div>
                                     </div>
                                 </div>

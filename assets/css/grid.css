@@ -198,8 +198,8 @@ body {
 /**
  * Estilos para los márgenes
  * */
-.sin-margen            { margin: 0 }
-.sin-margen-superior   { margin-top: 0 }
-.sin-margen-inferior   { margin-bottom: 0 }
-.sin-margen-izquierdo  { margin-left: 0 }
-.margen-horizontal-10  { margin-left: 10px; margin-right: 10px; }
+.sin-margen            { margin: 0 !important }
+.sin-margen-superior   { margin-top: 0 !important }
+.sin-margen-inferior   { margin-bottom: 0 !important }
+.sin-margen-izquierdo  { margin-left: 0 !important }
+.margen-horizontal-10  { margin-left: 10px !important; margin-right: 10px !important; }
