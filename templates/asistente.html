@@ -90,7 +90,7 @@
         <div class="fila">
             <div id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
                 <div class="celda centrado">
-                    <button class="boton blanco bg-purpura-4 bg-hover-purpura-5"
+                    <button class="boton"
                             onclick="document.getElementById('transicion').style.display = 'block';
                                     document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
                                     document.getElementById('transicion').style.background = 'rgb(255 255 255 / 100%)';
@@ -102,7 +102,10 @@
                                     setTimeout(function() {
                                         document.getElementById('transicion').style.display = 'none';
                                     }, 2000);">
-                        Iniciar adopción
+                        <div>
+                            <span>Iniciar adopción</span>
+                            <img class="icono" src="../assets/icons/aplicar-blanco.svg" />
+                        </div>
                     </button>
                 </div>
             </div>
@@ -149,15 +152,23 @@
                             <div class="columna-smartphone-12">
                                 <div class="fila">
                                     <!-- Título -->
-                                    <div class="columna-escritorio-8 columna-smartphone-6">
-                                        <h4 class="sin-margen-inferior">Estado de la adopción</h4>
+                                    <div class="columna-smartphone-6">
+                                        <h3 class="sin-margen-inferior" style="margin-top: 23px">Estado de la adopción</h3>
                                         <span style="color: green">En curso</span>
                                     </div>
                                     
                                     <!-- Botón de anular proceso de adopción -->
-                                    <div class="columna-escritorio-4 columna-smartphone-6 a-la-derecha">
+                                    <div class="columna-smartphone-6">
                                         <br>
-                                        <button class="boton blanco bg-purpura-4 bg-hover-purpura-5">Cancelar adopción</button>
+
+                                        <div class="celda sin-margen-interno-derecho centrado">
+                                            <button class="boton">
+                                                <div>
+                                                    <span>Cancelar adopción</span>
+                                                    <img class="icono" src="../assets/icons/rechazar-blanco.svg" />
+                                                </div>
+                                            </button>
+                                        </div>
                                     </div>
                                     
                                     <!-- Descripción -->

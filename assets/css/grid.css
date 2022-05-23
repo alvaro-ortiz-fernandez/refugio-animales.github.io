@@ -208,13 +208,17 @@ body {
 /**
  * Estilos para los márgenes
  * */
-.sin-margen            { margin: 0 !important }
-.sin-margen-superior   { margin-top: 0 !important }
-.sin-margen-inferior   { margin-bottom: 0 !important }
-.sin-margen-izquierdo  { margin-left: 0 !important }
-.sin-margen-derecho    { margin-right: 0 !important }
-.margen-superior-10    { margin-top: 10px !important; }
-.margen-inferior-10    { margin-bottom: 10px !important; }
-.margen-izquierdo-10   { margin-left: 10px !important; }
-.margen-derecho-10     { margin-right: 10px !important; }
-.margen-horizontal-10  { margin-left: 10px !important; margin-right: 10px !important; }
+.sin-margen                    { margin: 0 !important }
+.sin-margen-superior           { margin-top: 0 !important }
+.sin-margen-inferior           { margin-bottom: 0 !important }
+.sin-margen-izquierdo          { margin-left: 0 !important }
+.sin-margen-derecho            { margin-right: 0 !important }
+.sin-margen-interno-superior   { padding-top: 0 !important }
+.sin-margen-interno-inferior   { padding-bottom: 0 !important }
+.sin-margen-interno-izquierdo  { padding-left: 0 !important }
+.sin-margen-interno-derecho    { padding-right: 0 !important }
+.margen-superior-10            { margin-top: 10px !important; }
+.margen-inferior-10            { margin-bottom: 10px !important; }
+.margen-izquierdo-10           { margin-left: 10px !important; }
+.margen-derecho-10             { margin-right: 10px !important; }
+.margen-horizontal-10          { margin-left: 10px !important; margin-right: 10px !important; }

@@ -163,15 +163,46 @@ input:invalid:not(:placeholder-shown) {
 .boton {
     display: inline-block;
     width: 100%;
-    padding: 12px 30px;
+    padding: 8px;
+    background: linear-gradient(135deg, #9137FF, #B476FF);
+    color: white;
+    box-shadow: 0 2px 12px 0 rgba(91, 41, 191, 0.5);
+    border: none;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    border: none;
     cursor: pointer;
     font-size: 16px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-
+.boton div {
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.boton:hover div {
+    background: rgba(255, 255, 255, 0.3);
+}
+.boton span {
+    vertical-align: middle;
+    margin-right: 20px;
+    outline: none;
+}
+.boton .icono {
+    position: absolute;
+    right: 30px;
+    outline: none;
+    transition: 0.3s;
+}
+.boton:focus:active {
+    margin: 2px -2px -2px 2px;
+    box-shadow: none;
+}
+.boton:focus:active .icono  {
+    right: 28px;
+}
 
 /**
  * ICONOS
@@ -242,6 +273,7 @@ input:invalid:not(:placeholder-shown) {
     border-radius: 20px;
 }
 .nuevo-mensaje {
+    font-family: "Poppins", sans-serif;
     width: calc(100% + 30px) !important;
     margin: 0 0 0 -20px !important;
     box-sizing: border-box !important;
@@ -249,9 +281,9 @@ input:invalid:not(:placeholder-shown) {
     border-radius: 0 !important;
     background-image: url('../icons/enviar-blanco.svg') !important;
     background-size: 24px 24px !important;
-    background-position: 15px 15px !important; 
+    background-position: 20px 17px !important;
     background-repeat: no-repeat !important;
-    padding: 20px 20px 20px 50px !important;
+    padding: 20px 20px 20px 60px !important;
 }
 @media (min-width: 768px) {
     .nuevo-mensaje {
