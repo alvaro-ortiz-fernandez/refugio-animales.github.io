@@ -3,6 +3,7 @@
  * */
 body {
     font-family: "Poppins", sans-serif;
+    background: #fafafa;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bebas Neue", sans-serif;
@@ -272,6 +273,44 @@ input:invalid:not(:placeholder-shown) {
     margin-left: -60px;
     background: rgb(255 255 255 / 0%);
     transition: 1s;
+}
+
+
+/**
+ * NAVBAR
+ * */
+.navbar {
+    position: relative;
+    padding: 8px;
+    margin: 8px -43px 20px -43px;
+    background: linear-gradient(135deg, #9137FF, #B476FF);
+    color: white;
+    box-shadow: 0 2px 12px 0 rgba(91, 41, 191, 0.5);
+    border-radius: 4px;
+}
+.navbar .celda {
+    cursor: pointer;
+    margin: 0 5px;
+    padding-top: 5px;
+    border-radius: 4px;
+}
+.navbar .celda {
+    background: #B476FF;
+    /*opacity: 0;*/
+    transition: 0.3s;
+}
+.navbar .celda.seleccionada,
+.navbar .celda:hover {
+    opacity: 0.3;
+}
+.navbar .icono,
+.navbar .texto {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.navbar .celda:hover .icono,
+.navbar .celda:hover .texto {
+    opacity: 1;
 }
 
 
