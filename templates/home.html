@@ -12,41 +12,63 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="contenedor bg-gray">
-        <div class="fila">
-            <div class="columna-smartphone-12">
-                <div class="celda">
-                    <p class="sin-margen-inferior bg-yellow">NAVBAR</p>
+    <div class="contenedor navbar">
+        <div class="fila sin-margen-inferior">
+            <!-- Home -->
+            <div class="columna-smartphone-3 centrado">
+                <div class="celda seleccionada">
+                    <img class="icono" src="../assets/icons/menu-blanco.svg" />
+                    <div class="texto">Home</div>
                 </div>
             </div>
-            <div class="columna-smartphone-12">
+            
+            <!-- Animales -->
+            <div class="columna-smartphone-3 centrado">
+                <a class="celda" href="listado.html">
+                    <img class="icono" src="../assets/icons/categoria-blanco.svg" />
+                    <div class="texto">Animales</div>
+                </a>
+            </div>
+            
+            <!-- Centros -->
+            <div class="columna-smartphone-3 centrado">
                 <div class="celda">
-                    <p class="sin-margen-superior bg-orange">BUSCADOR</p>
+                    <img class="icono" src="../assets/icons/ubicacion-blanco.svg" />
+                    <div class="texto">Centros</div>
+                </div>
+            </div>
+            
+            <!-- Unirse -->
+            <div class="columna-smartphone-3 centrado">
+                <div class="celda">
+                    <img class="icono" src="../assets/icons/usuario-blanco.svg" />
+                    <div class="texto">Unirse</div>
                 </div>
             </div>
         </div>
     </div>
-
-    <br>
-    <br>
 
     <!-- Acceso al listado de animales -->
     <div id="listado" class="fila">
         <!-- Imagen 1 -->
         <div class="columna-escritorio-6 columna-smartphone-12">
             <div class="celda">
-                <div class="imagen-cuadrada ratio-16-9">
-                    <img src="../assets/images/animales-1.png"/>
-                </div>
+                <a href="listado.html">
+                    <div class="imagen-cuadrada ratio-16-9">
+                        <img src="../assets/images/animales-1.png"/>
+                    </div>
+                </a>
             </div>
         </div>
         
         <!-- Imagen 2 (Oculta en dispositivos móviles) -->
         <div class="columna-escritorio-6 oculto-smartphone">
             <div class="celda">
-                <div class="imagen-cuadrada ratio-16-9">
-                    <img src="../assets/images/animales-2.png"/>
-                </div>
+                <a href="listado.html">
+                    <div class="imagen-cuadrada ratio-16-9">
+                        <img src="../assets/images/animales-2.png"/>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -66,36 +88,44 @@
             <!-- Imagen 1 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
                 <div class="celda">
-                    <div class="imagen-cuadrada">
-                        <img src="../assets/images/perro.png"/>
-                    </div>
+                    <a href="detalle.html">
+                        <div class="imagen-cuadrada">
+                            <img src="../assets/images/perro.png"/>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Imagen 2 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
                 <div class="celda">
-                    <div class="imagen-cuadrada">
-                        <img src="../assets/images/gato.jpg"/>
-                    </div>
+                    <a href="detalle.html">
+                        <div class="imagen-cuadrada">
+                            <img src="../assets/images/gato.jpg"/>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Imagen 3 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
                 <div class="celda">
-                    <div class="imagen-cuadrada">
-                        <img src="../assets/images/conejo.jpg"/>
-                    </div>
+                    <a href="detalle.html">
+                        <div class="imagen-cuadrada">
+                            <img src="../assets/images/conejo.jpg"/>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Imagen 4 -->
             <div class="columna-escritorio-3 columna-smartphone-6">
                 <div class="celda">
-                    <div class="imagen-cuadrada">
-                        <img src="../assets/images/cerdito.png"/>
-                    </div>
+                    <a href="detalle.html">
+                        <div class="imagen-cuadrada">
+                            <img src="../assets/images/cerdito.png"/>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
