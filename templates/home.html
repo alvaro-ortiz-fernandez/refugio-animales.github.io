@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <!-- Script para compatibilizar el navegador con Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="text/javascript">
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.031 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+        }
+
+        window.initMap = initMap;
+    </script>
     <title>Inicio</title>
 </head>
 <body>
@@ -241,7 +262,7 @@
                     </div>
                         
                     <!-- Bloque 3 -->
-                    <div class="fila">
+                    <div class="fila sin-margen-inferior">
                         <div class="columna-smartphone-12">
                             <div class="fila sin-margen-inferior">
                                 <div class="columna-smartphone-12">
@@ -264,7 +285,8 @@
                 </div>
                 <div class="columna-escritorio-8 columna-smartphone-12">
                     <div class="celda">
-                        <div class="bg-purpura-6" style="min-height: 254px"></div>
+                        <div id="map" style="height: 265px; width: 100%;"></div>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
                     </div>
                 </div>
             </div>
