@@ -7,6 +7,7 @@ body {
     margin: 0 !important;
 }
 
+
 /**
  * El cuerpo de la página define un margen interno
  * de 15px en pantallas para dispositivos móviles,
@@ -25,51 +26,6 @@ body {
     }
 }
 
-/**
- * Contenedores - Marcamos margen negativo para contrarestar
- * el margen del body, y padding interno para igualar el grid
- * al resto de filas sin contenedor
- * */
-@media (max-width: 767px) {
-    .contenedor {
-        margin-left: -10px;
-        margin-right: -10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .contenedor-smartphone {
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-}
-@media (min-width: 768px) {
-    .contenedor {
-        margin-left: -50px;
-        margin-right: -50px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .contenedor-smartphone {
-        margin-left: -10px;
-        margin-right: -10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
-    .contenedor-izquierdo {
-        margin-left: -50px;
-    }
-    
-    .contenedor-derecho {
-        margin-right: -50px;
-    }
-    
-    .contenedor-interno-derecho {
-        padding-right: 50px;
-    }
-}
 
 /**
  * Filas - Aplicamos los estilos para separar
@@ -86,6 +42,7 @@ body {
 .fila:after {
     clear: both;
 }
+
 
 /**
  * Las columnas se definen por tamaño de menor a mayor,
@@ -121,6 +78,7 @@ body {
 .columna-smartphone-offset-2  { margin-left: 16.6% }
 .columna-smartphone-offset-1  { margin-left: 8.3%  }
 
+
 /**
  * Columnas para pantallas con anchura a partir de 768px píxeles
  *
@@ -155,6 +113,7 @@ body {
     .columna-escritorio-offset-1  { margin-left: 8.3%  }
     .columna-escritorio-offset-0  { margin-left: 0%    }
 }
+
 
 /**
  * Estilos aplicables a todos los tamaños de columna
@@ -193,17 +152,20 @@ body {
     padding: 0;
 }
 
+
 /**
  * Clases que usaremos para cada bloque dentro de una columna
  * */
 .celda { padding: 0 10px; }
-.bloque-texto { padding: 15px 30px; }
+.bloque-texto { padding: 20px 30px; }
+
 
 /**
  * Estilos para los tamaños
  * */
 .anchura-completa { width: 100% }
 .altura-completa  { height: 100% }
+
 
 /**
  * Estilos para los márgenes
@@ -222,3 +184,50 @@ body {
 .margen-izquierdo-10           { margin-left: 10px !important; }
 .margen-derecho-10             { margin-right: 10px !important; }
 .margen-horizontal-10          { margin-left: 10px !important; margin-right: 10px !important; }
+
+
+/**
+ * Contenedores - Marcamos margen negativo para contrarestar
+ * el margen del body, y padding interno para igualar el grid
+ * al resto de filas sin contenedor
+ * */
+@media (max-width: 767px) {
+    .contenedor {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .contenedor-smartphone {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor {
+        margin-left: -50px !important;
+        margin-right: -50px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .contenedor-smartphone {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    
+    .contenedor-izquierdo {
+        margin-left: -50px !important;
+    }
+    
+    .contenedor-derecho {
+        margin-right: -50px !important;
+    }
+    
+    .contenedor-interno-derecho {
+        padding-right: 50px !important;
+    }
+}
