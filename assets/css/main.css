@@ -416,21 +416,25 @@ input:invalid:not(:placeholder-shown) {
 .hover-blanco:hover    { color: white }
 .hover-negro:hover     { color: black }
 
-.bg-purpura-6 { background: #4C1194 }
-.bg-purpura-5 { background: #681BC6 }
-.bg-purpura-4 { background: #9137FF }
-.bg-purpura-3 { background: #B476FF }
-.bg-purpura-2 { background: #D6B3FF }
-.bg-purpura-1 { background: #F0E3FF }
-.bg-blanco    { background: white }
-.bg-negro     { background: black }
+.bg-purpura-6   { background: #4C1194 }
+.bg-purpura-5   { background: #681BC6 }
+.bg-purpura-4   { background: #9137FF }
+.bg-purpura-3   { background: #B476FF }
+.bg-purpura-2   { background: #D6B3FF }
+.bg-purpura-1   { background: #F0E3FF }
+.bg-blanco      { background: white }
+.bg-gris-claro  { background: #fafafa }
+.bg-gris-oscuro { background: #363636 }
+.bg-negro       { background: black }
 
-.bg-hover-purpura-6:hover { background: #4C1194 }
-.bg-hover-purpura-5:hover { background: #681BC6 }
-.bg-hover-purpura-4:hover { background: #9137FF }
-.bg-hover-purpura-3:hover { background: #B476FF }
-.bg-hover-purpura-2:hover { background: #D6B3FF }
-.bg-hover-purpura-1:hover { background: #F0E3FF }
+.bg-hover-purpura-6:hover   { background: #4C1194 }
+.bg-hover-purpura-5:hover   { background: #681BC6 }
+.bg-hover-purpura-4:hover   { background: #9137FF }
+.bg-hover-purpura-3:hover   { background: #B476FF }
+.bg-hover-purpura-2:hover   { background: #D6B3FF }
+.bg-hover-purpura-1:hover   { background: #F0E3FF }
+.bg-hover-gris-claro:hover  { background: #fafafa }
+.bg-hover-gris-oscuro:hover { background: #363636 }
 
 .border-hover-purpura-6:hover { border-color: #4C1194 }
 .border-hover-purpura-5:hover { border-color: #681BC6 }
