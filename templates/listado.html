@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <!-- Script para compatibilizar el navegador con Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="text/javascript">
+        // Método que invoca Google Maps
+        function initMap() {
+            // Coordenadas (Latitud y Longitud) de Alcobendas
+            const alcobendas = { lat: 40.5475, lng: -3.64209 };
+
+            // Pintamos el mapa
+            const marker = new google.maps.Marker({
+                position: alcobendas,
+                map: new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: alcobendas,
+                })
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
     <title>Listado de animales</title>
 </head>
 <body>
@@ -49,6 +69,48 @@
     </div>
 
     <div class="fila">
+        <!-- Menú de opciones -->
+        <div id="menu-opciones" class="columna-escritorio-4 columna-smartphone-12">
+            <div class="fila">
+                <!-- Texto -->
+                <div class="columna-smartphone-12">
+                    <div class="celda">
+                        <h1 class="justificado sin-margen-superior">Conoce a algunos de nuestros animales</h1>
+                        <p class="justificado">Te ayudamos a encontrar a la mejor mascota para tí y tu familia, por ello te mostramos aquí algunos de forma aleatoria, sin distinción.</p>
+                    </div>
+                 </div>
+
+                <!-- Buscador -->
+                <div class="columna-smartphone-12">
+                    <div class="celda">
+                        <input class="buscador" type="text" placeholder="Introduzca un término de búsqueda..." />
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Opciones de búsqueda -->
+            <div class="fila">
+                <div class="celda">
+                    <!-- Categoria -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img src="../assets/icons/categoria.svg" />
+                    </div>
+                    <!-- Ubicación -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img src="../assets/icons/ubicacion.svg" />
+                    </div>
+                    <!-- Foto -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img src="../assets/icons/imagen.svg" />
+                    </div>
+                    <!-- Precio -->
+                    <div class="columna-smartphone-3 centrado">
+                        <img src="../assets/icons/precio.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Listado con scroll -->
         <div id="listado-animales" class="columna-escritorio-8 columna-smartphone-12">
             <!-- 1º Fila de imágenes -->
@@ -134,7 +196,7 @@
             </div>
 
             <!-- Icono de carga -->
-            <div class="fila">
+            <div class="fila sin-margen-inferior">
                 <div class="columna-smartphone-12">
                     <div class="celda centrado">
                         <span class="cargando"></span>
@@ -142,45 +204,101 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Menú de opciones -->
-        <div id="menu-opciones" class="columna-escritorio-4 columna-smartphone-12">
-            <div class="fila">
-                <!-- Texto -->
-                <div class="columna-smartphone-12">
-                    <div class="celda">
-                        <h1 class="justificado sin-margen-superior">Lorem ipsum, dolor sit amet consectetur</h1>
-                        <p class="justificado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit.</p>
-                    </div>
-                 </div>
+    </div>
 
-                <!-- Buscador -->
+    <!-- Footer -->
+    <div id="footer" class="contenedor bg-purpura-1">
+        <!-- Conctacto -->
+        <div id="contacto">
+            <div class="fila">
+                <!-- Título -->
                 <div class="columna-smartphone-12">
                     <div class="celda">
-                        <input class="buscador" type="text" placeholder="Introduzca un término de búsqueda..." />
+                        <div class="bloque-texto centrado">
+                            <h1 class="sin-margen-inferior">Contacto</h1>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <!-- Opciones de búsqueda -->
-            <div class="fila">
-                <div class="celda">
-                    <!-- Categoria -->
-                    <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/categoria.svg" />
+            <div class="fila sin-margen-inferior">
+                <div class="columna-escritorio-4 columna-smartphone-12">
+                    <!-- Bloque 1 -->
+                    <div class="fila">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/llamada.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Teléfono</h4>
+                                                <span>+34 921 384 561</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Ubicación -->
-                    <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/ubicacion.svg" />
+
+                    <!-- Bloque 2 -->
+                    <div class="fila">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/fecha.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Horario</h4>
+                                                <span>L-V 9:00 a 20:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Foto -->
-                    <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/imagen.svg" />
+                        
+                    <!-- Bloque 3 -->
+                    <div class="fila sin-margen-inferior">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-blanco bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/email.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Email</h4>
+                                                <span>refugio@animales.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Precio -->
-                    <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/precio.svg" />
+                
+                    <br>
+                </div>
+
+                <div class="columna-escritorio-8 columna-smartphone-12">
+                    <div class="celda">
+                        <div id="map" style="height: 265px; width: 100%;"></div>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
                     </div>
+
+                    <br>
                 </div>
             </div>
         </div>

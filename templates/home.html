@@ -11,20 +11,19 @@
     <!-- Script para compatibilizar el navegador con Google Maps -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script type="text/javascript">
-        // Initialize and add the map
+        // Método que invoca Google Maps
         function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.031 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
+            // Coordenadas (Latitud y Longitud) de Alcobendas
+            const alcobendas = { lat: 40.5475, lng: -3.64209 };
+
+            // Pintamos el mapa
+            const marker = new google.maps.Marker({
+                position: alcobendas,
+                map: new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: alcobendas,
+                })
+            });
         }
 
         window.initMap = initMap;
@@ -70,7 +69,7 @@
     </div>
 
     <!-- Acceso al listado de animales -->
-    <div id="listado" class="fila">
+    <div id="listado" class="fila sin-margen-inferior">
         <!-- Imagen 1 (Oculta en dispositivos móviles) -->
         <div class="columna-escritorio-6 oculto-smartphone">
             <div class="celda">
@@ -95,8 +94,8 @@
 
         <!-- Texto -->
         <div class="columna-smartphone-12 centrado">
-            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>
+            <h1>Acceso al listado de animales</h1>
+            <p class="sin-margen-inferior">Un animal abandonado que vuelve a recibir el cariño de una familia que lo acoge es el más fiel compañero que podemos encontrar. Antes de pensar en la belleza exterior del perro, pensad siempre en el carácter y en qué tipo de vida le vais a dar. Cada animal tiene una “personalidad” diferente y el personal del centro de adopción os podrá aconsejar acerca de qué animal es más adecuado para cada persona o familia.</p>
         </div>
     </div>
 
@@ -116,8 +115,9 @@
                         </div>
                     </a>
                 </div>
-
-                <br>
+                <div class="celda centrado">
+                    <h4>Nilo</h4>
+                </div>
             </div>
 
             <!-- Imagen 2 -->
@@ -129,8 +129,9 @@
                         </div>
                     </a>
                 </div>
-            
-                <br>
+                <div class="celda centrado">
+                    <h4>Linda</h4>
+                </div>
             </div>
 
             <!-- Imagen 3 -->
@@ -141,6 +142,9 @@
                             <img src="../assets/images/conejo.jpg"/>
                         </div>
                     </a>
+                </div>
+                <div class="celda centrado">
+                    <h4 class="sin-margen-inferior">Chispitas</h4>
                 </div>
             </div>
 
@@ -153,45 +157,53 @@
                         </div>
                     </a>
                 </div>
+                <div class="celda centrado">
+                    <h4 class="sin-margen-inferior">Kira</h4>
+                </div>
             </div>
         </div>
 
         <div class="fila">
             <!-- Texto -->
             <div class="columna-smartphone-12 centrado">
-                <h1 class="sin-margen-superior">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>
+                <h1 class="sin-margen-superior">Últimas adopciones</h1>
+                <p>Muchos perros y gatos abandonados han recuperado una vida digna encontrando una segunda oportunidad gracias al esfuerzo de todos los integrantes de la organización. Pero aún queda mucho camino por recorrer y mucho trabajo por realizar, necesitamos vuestro apoyo y os animamos a conocer el proyecto, participar, colaborar… Porque hay muchas maneras de ayudarnos a cambiarles la vida.</p>
             </div>
         </div>
     </div>
 
     <br>
-    <br>
 
     <!-- Últimas noticias de la organización -->
     <div id="ultimas-noticias" class="fila">
-        <!-- Noticia izquierda -->
-        <div class="columna-escritorio-4 columna-smartphone-12">
-            <div class="celda">
-                <div class="imagen-cuadrada ratio-16-9">
-                    <img src="../assets/images/vacuna-1.jpg"/>
-                </div>
-            </div>
+        <!-- Título -->
+        <div class="columna-smartphone-12 centrado">
+            <h1 class="sin-margen-superior">Últimas noticias de la organización</h1>
+        </div>
+
+        <!-- Noticia izquierda (Oculto en dispositivos móviles) -->
+        <div class="columna-escritorio-4 oculto-smartphone">
             <div class="celda">
                 <div class="bloque-texto justificado bg-purpura-3 blanco">
-                    <h1>Lorem ipsum</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel.</p>
+                    <h1>¿Por qué las gaviotas anidan a 90 km de la costa?</h1>
+                    <p class="sin-margen-inferior">Durante años nadie sabía dónde anidaba la aparentemente normal gaviota gris chilena, hasta que en 1945 se las encontraron en mitad del desierto de Atacama. Imágenes del programa ‘Wild Chile’.</p>
                 </div>
             </div>
         </div>
         
-        <!-- Noticia derecha (Oculto en dispositivos móviles) -->
-        <div class="columna-escritorio-8 oculto-smartphone">
+        <!-- Noticia derecha -->
+        <div class="columna-escritorio-8 columna-smartphone-12">
+            <!-- Imagen -->
+            <div class="celda">
+                <div class="imagen-cuadrada ratio-3-1">
+                    <img src="../assets/images/vacuna-1.jpg"/>
+                </div>
+            </div>
             <!-- Texto -->
             <div class="celda">
                 <div class="bloque-texto justificado bg-purpura-5 blanco">
-                    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque?</p>
+                    <h1>Científicos no saben si algunas especies se perdieron o se extinguieron</h1>
+                    <p class="sin-margen-inferior">La revisión de la Lista Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza llevó a los científicos a concluir que 562 especies están perdidas en la naturaleza o posiblemente extintas, ya que no han sido vistas en 50 años.</p>
                 </div>
             </div>
         </div>
@@ -209,7 +221,7 @@
                 <div class="columna-smartphone-12">
                     <div class="celda">
                         <div class="bloque-texto centrado">
-                            <h1 class="sin-margen-inferior">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
+                            <h1 class="sin-margen-inferior">Contacto</h1>
                         </div>
                     </div>
                 </div>
@@ -229,8 +241,8 @@
                                                 <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
                                             </div>
                                             <div class="detalle">
-                                                <h4 class="sin-margen">Raza</h4>
-                                                <span>Conejo Toy</span>
+                                                <h4 class="sin-margen">Teléfono</h4>
+                                                <span>+34 921 384 561</span>
                                             </div>
                                         </div>
                                     </div>
@@ -251,8 +263,8 @@
                                                 <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
                                             </div>
                                             <div class="detalle">
-                                                <h4 class="sin-margen">Raza</h4>
-                                                <span>Conejo Toy</span>
+                                                <h4 class="sin-margen">Horario</h4>
+                                                <span>L-V 9:00 a 20:00</span>
                                             </div>
                                         </div>
                                     </div>
@@ -269,12 +281,12 @@
                                     <div class="celda tarjeta bg-blanco bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/ubicacion.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/ubicacion-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/email.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" />
                                             </div>
                                             <div class="detalle">
-                                                <h4 class="sin-margen">Raza</h4>
-                                                <span>Conejo Toy</span>
+                                                <h4 class="sin-margen">Email</h4>
+                                                <span>refugio@animales.com</span>
                                             </div>
                                         </div>
                                     </div>
@@ -282,16 +294,19 @@
                             </div>
                         </div>
                     </div>
+                
+                    <br>
                 </div>
+
                 <div class="columna-escritorio-8 columna-smartphone-12">
                     <div class="celda">
                         <div id="map" style="height: 265px; width: 100%;"></div>
                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
                     </div>
+
+                    <br>
                 </div>
             </div>
-
-            <br>
         </div>
     </div>
 </body>

@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+    <!-- Script para compatibilizar el navegador con Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="text/javascript">
+        // Método que invoca Google Maps
+        function initMap() {
+            // Coordenadas (Latitud y Longitud) de Alcobendas
+            const alcobendas = { lat: 40.5475, lng: -3.64209 };
+
+            // Pintamos el mapa
+            const marker = new google.maps.Marker({
+                position: alcobendas,
+                map: new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: alcobendas,
+                })
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
     <title>Detalle</title>
 </head>
 <body>
@@ -103,8 +123,8 @@
                 <!-- Texto principal -->
                 <div class="columna-smartphone-12">
                     <div class="bloque-texto">
-                        <h1 class="centrado sin-margen-superior">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h1>
-                        <p class="justificado sin-margen-inferior">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero maiores quo possimus consequuntur aperiam quod similique molestiae ad facere odit, repellat iste atque labore minus cupiditate corporis perspiciatis vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam ab voluptatibus voluptate incidunt, illo quis vitae est aut, sint provident tempora fugit aperiam architecto perferendis et vel ullam doloremque.</p>
+                        <h1 class="centrado sin-margen-superior">Conoce a Chispitas</h1>
+                        <p class="justificado sin-margen-inferior">Tiene una mirada tierna y sincera que pide a gritos muestras de amistad y confianza. Se mueve despacio, con sigilo, como temiendo molestar, pero el interés consigue que se acerque y tremendamente cuidadoso, lame tu mano obteniendo su premio. Luego se aleja unos prudentes pasos para tumbarse confiado y agradecido cerca de quien acaba de catalogar como amigo. Es muy sociable con sus compañeros.</p>
                     </div>
                 </div>
             </div>
@@ -113,8 +133,8 @@
                 <!-- Texto inferior -->
                 <div class="columna-escritorio-6 columna-smartphone-12">
                     <div class="bloque-texto sin-margen-interno-superior">
-                        <h4 class="sin-margen-superior sin-margen-inferior">Adipisicing elit</h4>
-                        <p class="sin-margen-superior sin-margen-inferior">Sint provident tempora fugit</p>
+                        <h4 class="sin-margen-superior sin-margen-inferior">¿Te gusta Chispitas?</h4>
+                        <p class="sin-margen-superior sin-margen-inferior">Ayúdanos a buscarle hogar</p>
                     </div>
                 </div>
 
@@ -263,6 +283,107 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <div id="footer" class="contenedor bg-purpura-1">
+        <!-- Conctacto -->
+        <div id="contacto">
+            <div class="fila">
+                <!-- Título -->
+                <div class="columna-smartphone-12">
+                    <div class="celda">
+                        <div class="bloque-texto centrado">
+                            <h1 class="sin-margen-inferior">Contacto</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fila sin-margen-inferior">
+                <div class="columna-escritorio-4 columna-smartphone-12">
+                    <!-- Bloque 1 -->
+                    <div class="fila">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/llamada.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Teléfono</h4>
+                                                <span>+34 921 384 561</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bloque 2 -->
+                    <div class="fila">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/fecha.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Horario</h4>
+                                                <span>L-V 9:00 a 20:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- Bloque 3 -->
+                    <div class="fila sin-margen-inferior">
+                        <div class="columna-smartphone-12">
+                            <div class="fila sin-margen-inferior">
+                                <div class="columna-smartphone-12">
+                                    <div class="celda tarjeta bg-blanco bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
+                                        <div class="fila sin-margen-inferior">
+                                            <div class="etiqueta">
+                                                <img class="icono" src="../assets/icons/email.svg" />
+                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" />
+                                            </div>
+                                            <div class="detalle">
+                                                <h4 class="sin-margen">Email</h4>
+                                                <span>refugio@animales.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <br>
+                </div>
+
+                <div class="columna-escritorio-8 columna-smartphone-12">
+                    <div class="celda">
+                        <div id="map" style="height: 265px; width: 100%;"></div>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+                    </div>
+
+                    <br>
                 </div>
             </div>
         </div>

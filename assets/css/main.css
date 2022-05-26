@@ -206,6 +206,9 @@ input:invalid:not(:placeholder-shown) {
     margin: 2px -2px -2px 2px;
     box-shadow: none;
 }
+.bloque-texto .boton:focus:active  {
+    margin-left: -13px;
+}
 .boton:focus:active .icono  {
     right: 28px;
 }
@@ -227,8 +230,8 @@ input:invalid:not(:placeholder-shown) {
 }
 .cargando {
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 54px;
+    height: 54px;
     vertical-align: text-bottom;
     border: 4px solid currentColor;
     border-right-color: transparent;
