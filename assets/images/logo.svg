@@ -1,0 +1,32 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.111 178.242">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5617ff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #f0e3ff;
+        stroke-width: 16px;
+      }
+
+      .cls-3 {
+        stroke: #bb4aff;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <ellipse id="Dedo_Izquierdo" data-name="Dedo Izquierdo" class="cls-1" cx="27.107" cy="49.205" rx="26.004" ry="17.136" transform="translate(-24.273 71.921) rotate(-85)"/>
+  <ellipse id="Dedo_central_izquierdo" data-name="Dedo central izquierdo" class="cls-1" cx="70.537" cy="30.544" rx="31.135" ry="20.524" transform="translate(22.777 90.773) rotate(-75)"/>
+  <ellipse id="Dedo_central_derecho" data-name="Dedo central derecho" class="cls-1" cx="114.352" cy="48.824" rx="31.135" ry="20.524" transform="translate(21.775 131.828) rotate(-65)"/>
+  <ellipse id="Dedo_derecho" data-name="Dedo derecho" class="cls-1" cx="131.629" cy="93.983" rx="26.004" ry="17.136" transform="translate(-20.856 147.901) rotate(-55)"/>
+  <path id="Palma" class="cls-1" d="M78.868,67.664c-14.732-5.082-27.383-.43-41.8,8.881C23.571,85.258-1.126,115,7.372,123.555c11.567,11.64,25.245-.775,48.585,7.565,21.666,7.743,26.232,25.53,39.519,24.5,17.5-1.355,13.336-38.252,10.428-53.653C102.663,84.808,91.554,72.04,78.868,67.664Z"/>
+  <ellipse id="Dedo_central_derecho-2" data-name="Dedo central derecho" class="cls-1" cx="114.352" cy="48.824" rx="31.135" ry="20.524" transform="translate(21.775 131.828) rotate(-65)"/>
+  <path id="Borde" class="cls-2" d="M74.827,145.789S71.356,133.311,55.9,121.426C40.579,109.642,33.337,111.4,20.593,101.748.422,86.469,6.757,50.919,23.612,40.282,53.968,21.125,66.7,52.945,66.7,52.945s10.276-36.1,40.238-19.953c17.963,9.682,29.946,37.467,13.315,56.21-10.062,11.339-19.423,13.688-31.023,29.307C77.465,134.355,74.827,145.789,74.827,145.789Z"/>
+  <path id="Corazón" class="cls-3" d="M74.827,145.789S71.356,133.311,55.9,121.426C40.579,109.642,33.337,111.4,20.593,101.748.422,86.469,6.757,50.919,23.612,40.282,53.968,21.125,66.7,52.945,66.7,52.945s10.276-36.1,40.238-19.953c17.963,9.682,29.946,37.467,13.315,56.21-10.062,11.339-19.423,13.688-31.023,29.307C77.465,134.355,74.827,145.789,74.827,145.789Z"/>
+</svg>
