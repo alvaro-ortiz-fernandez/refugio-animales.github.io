@@ -15,81 +15,85 @@
     <div id="transicion" class="transicion"></div>
 
     <!-- 1º Paso - Formulario -->
-    <div id="formulario" class="contenedor bg-purpura-1">
+    <section id="formulario" class="contenedor bg-purpura-1">
         <br>
 
         <!-- Cabecera -->
-        <div class="fila">
-            <div id="cabecera-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12">
+        <header class="fila">
+            <section id="cabecera-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12">
                 <div class="fila">
                     <!-- Botón de retroceso -->
-                    <div class="columna-smartphone-3">
+                    <nav class="columna-smartphone-3">
                         <a href="detalle.html">
                             <img class="icono" src="../assets/icons/atras-purpura.svg" />
                         </a>
-                    </div>
+                    </nav>
                     <!-- Nombre del animal -->
-                    <div class="columna-smartphone-6">
+                    <article class="columna-smartphone-6">
                         <h3 class="sin-margen centrado purpura-4">Chispitas</h3>
-                    </div>
+                    </article>
                 </div>
-            </div>
-        </div>
+            </section>
+        </header>
         
         <!-- Formulario -->
-        <div class="fila">
-            <div id="formulario-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12 bg-blanco sombra-centrada">
+        <article class="fila">
+            <section id="formulario-adopcion" class="columna-escritorio-8 columna-escritorio-offset-2 columna-smartphone-12 bg-blanco sombra-centrada">
                 <div class="fila">
                     <div class="columna-escritorio-6 columna-escritorio-offset-3 columna-smartphone-12">
                         <div class="celda">
                             <!-- Título -->
-                            <h1 class="centrado">Solucitud de adopción</h1>
+                            <header>
+                                <h1 class="centrado">Solucitud de adopción</h1>
+                            </header>
 
-                            <!-- Nombre -->
-                            <label for="nombre">Nombre</label>
-                            <input class="border-hover-purpura-3" type="text" id="nombre" placeholder="Nombre"
-                                required pattern="[A-Za-z]*" />
-                           
-                            <!-- Apellidos -->
-                            <label for="apellidos">Apellidos</label>
-                            <input class="border-hover-purpura-3" type="text" id="apellidos" placeholder="Apellidos"
-                                required pattern="[A-Za-z]*" />
+                            <article>
+                                <!-- Nombre -->
+                                <label for="nombre">Nombre</label>
+                                <input class="border-hover-purpura-3" type="text" id="nombre" placeholder="Nombre"
+                                    required pattern="[A-Za-z]*" />
                             
-                            <!-- Email -->
-                            <label for="email">Email</label>
-                            <input class="border-hover-purpura-3" type="email" id="email" placeholder="Email"
-                                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                            
-                            <!-- Teléfono -->
-                            <label for="telefono">Teléfono</label>
-                            <input class="border-hover-purpura-3 sin-margen-inferior" type="tel" id="telefono" placeholder="Teléfono"
-                                required pattern="[0-9]{9}" />
+                                <!-- Apellidos -->
+                                <label for="apellidos">Apellidos</label>
+                                <input class="border-hover-purpura-3" type="text" id="apellidos" placeholder="Apellidos"
+                                    required pattern="[A-Za-z]*" />
+                                
+                                <!-- Email -->
+                                <label for="email">Email</label>
+                                <input class="border-hover-purpura-3" type="email" id="email" placeholder="Email"
+                                    required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                                
+                                <!-- Teléfono -->
+                                <label for="telefono">Teléfono</label>
+                                <input class="border-hover-purpura-3 sin-margen-inferior" type="tel" id="telefono" placeholder="Teléfono"
+                                    required pattern="[0-9]{9}" />
+                            </article>
                             
                             <br>
                             <br>
 
                             <!-- Aceptación de términos -->
-                            <div class="checkbox centrado">
+                            <article class="checkbox centrado">
                                 <input id="terminos" class="centrado-vertical" type="checkbox" />
                                 <label for="terminos" class="centrado-vertical">Acepto los términos legales</label>
-                            </div>
+                            </article>
                             
                             <br>
 
                             <!-- Foto del animal a adoptar -->
-                            <div class="imagen-cuadrada ratio-3-1">
+                            <footer class="imagen-cuadrada ratio-3-1">
                                 <img src="../assets/images/conejo.jpg"/>
-                            </div>
+                            </footer>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
         
         <!-- Botón de adopción -->
-        <div class="fila">
-            <div id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
-                <div class="celda centrado">
+        <footer class="fila">
+            <section id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
+                <article class="celda centrado">
                     <button class="boton"
                             onclick="document.getElementById('transicion').style.display = 'block';
                                     document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
@@ -107,38 +111,38 @@
                             <img class="icono" src="../assets/icons/aplicar-blanco.svg" />
                         </div>
                     </button>
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </footer>
 
         <br>
-    </div>
+    </section>
 
     <!-- 2º Paso - Seguimiento -->
-    <div id="seguimiento" class="oculto">
+    <section id="seguimiento" class="oculto">
         <div class="fila sin-margen-inferior">
             <!-- Resumen y acciones -->
-            <div id="resumen-seguimiento" class="columna-escritorio-8 columna-smartphone-12">
+            <article id="resumen-seguimiento" class="columna-escritorio-8 columna-smartphone-12">
                 <br>
 
-                <div class="fila">
-                    <div id="cabecera-seguimiento" class="columna-smartphone-12">
-                        <div class="fila">
+                <section class="fila">
+                    <article id="cabecera-seguimiento" class="columna-smartphone-12">
+                        <header class="fila">
                             <!-- Botón de retroceso -->
-                            <div class="columna-smartphone-3">
+                            <nav class="columna-smartphone-3">
                                 <a href="detalle.html">
                                     <img class="icono" src="../assets/icons/atras-purpura.svg" />
                                 </a>
-                            </div>
+                            </nav>
                             <!-- Nombre del animal -->
-                            <div class="columna-smartphone-6">
+                            <header class="columna-smartphone-6">
                                 <h3 class="sin-margen centrado purpura-4">Chispitas</h3>
-                            </div>
-                        </div>
+                            </header>
+                        </header>
 
-                        <div class="fila">
+                        <section class="fila">
                             <!-- Foto del animal a adoptar -->
-                            <div class="columna-smartphone-12">
+                            <article class="columna-smartphone-12">
                                 <div class="contenedor-smartphone">
                                     <div class="fila sin-margen-inferior">
                                         <div class="imagen-cuadrada ratio-16-9">
@@ -146,19 +150,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                             
                             <!-- Resumen de la adopción -->
-                            <div class="columna-smartphone-12">
+                            <article class="columna-smartphone-12">
                                 <div class="fila">
                                     <!-- Título -->
-                                    <div class="columna-smartphone-6">
+                                    <header class="columna-smartphone-6">
                                         <h3 class="sin-margen-inferior" style="margin-top: 23px">Estado de la adopción</h3>
                                         <span style="color: green">En curso</span>
-                                    </div>
+                                    </header>
                                     
                                     <!-- Botón de anular proceso de adopción -->
-                                    <div class="columna-smartphone-6">
+                                    <nav class="columna-smartphone-6">
                                         <br>
 
                                         <div class="celda centrado" style="padding: 0 15px">
@@ -169,17 +173,17 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </nav>
                                     
                                     <!-- Descripción -->
-                                    <div class="columna-smartphone-12">
+                                    <article class="columna-smartphone-12">
                                         <p class="justificado">Tiene una mirada tierna y sincera que pide a gritos muestras de amistad y confianza. Se mueve despacio, con sigilo, como temiendo molestar, pero el interés consigue que se acerque y tremendamente cuidadoso, lame tu mano obteniendo su premio. Luego se aleja unos prudentes pasos para tumbarse confiado y agradecido cerca de quien acaba de catalogar como amigo. Es muy sociable con sus compañeros.</p>
-                                    </div>
+                                    </article>
                                 </div>
 
-                                <div class="fila sin-margen-inferior">
+                                <section class="fila sin-margen-inferior">
                                     <!-- Teléfono -->
-                                    <div class="columna-smartphone-6">
+                                    <article class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-inferior-10">
@@ -196,10 +200,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                     
                                     <!-- Adjuntar documentos -->
-                                    <div class="columna-smartphone-6">
+                                    <article class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-inferior-10">
@@ -216,12 +220,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </article>
+                                </section>
 
-                                <div class="fila sin-margen-inferior">
+                                <section class="fila sin-margen-inferior">
                                     <!-- Seleccionar fecha -->
-                                    <div class="columna-smartphone-6">
+                                    <article class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-superior-10">
@@ -238,10 +242,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </article>
                                     
                                     <!-- Seleccionar ubicación -->
-                                    <div class="columna-smartphone-6">
+                                    <article class="columna-smartphone-6">
                                         <div class="fila sin-margen-inferior">
                                             <div class="columna-smartphone-12">
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-superior-10">
@@ -258,24 +262,24 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    </article>
+                                </section>
+                            </article>
+                        </section>
+                    </article>
+                </section>
+            </article>
 
             <!-- Chat -->
-            <div id="chat-seguimiento" class="columna-escritorio-4 columna-smartphone-12">
-                <div class="contenedor-derecho contenedor-smartphone sin-margen-izquierdo conversacion bg-purpura-1">
+            <aside id="chat-seguimiento" class="columna-escritorio-4 columna-smartphone-12">
+                <section class="contenedor-derecho contenedor-smartphone sin-margen-izquierdo conversacion bg-purpura-1">
                     <br>
 
                     <div class="fila contenedor-interno-derecho sin-margen-inferior">
                         <div class="columna-smartphone-12">
                             <div class="celda">
                                 <!-- 1º Conversación -->
-                                <div class="fila">
+                                <article class="fila">
                                     <div class="columna-smartphone-12">
                                         <img class="avatar mover-a-la-izquierda" src="../assets/images/avatar-2.png" />
                                         
@@ -283,12 +287,12 @@
                                             <span>¡Hola! Mi nombre es Manuel, quería saber si sería posible acercarme al centro y ver en persona a Chispitas</span>
                                         </div>
                                     </div>
-                                </div>
+                                </article>
 
                                 <br>
                                 
                                 <!-- 2º Conversación -->
-                                <div class="fila">
+                                <article class="fila">
                                     <div class="columna-smartphone-12">
                                         <div class="chat mover-a-la-izquierda bg-blanco negro">
                                             <span>¡Hola Manuel! Claro, deja que revise cuando podemos concertar una cita</span>
@@ -296,23 +300,23 @@
 
                                         <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
                                     </div>
-                                </div>
+                                </article>
 
                                 <br>
                                 
                                 <!-- Fecha -->
-                                <div class="fila">
+                                <article class="fila">
                                     <div class="columna-smartphone-12 centrado">
                                         <span class="fecha-chat bg-purpura-4 blanco">
                                             - 12 / 06 / 2022 -
                                         </span>
                                     </div>
-                                </div>
+                                </article>
 
                                 <br>
                                 
                                 <!-- 3º Conversación -->
-                                <div class="fila">
+                                <article class="fila">
                                     <div class="columna-smartphone-12">
                                         <div class="chat mover-a-la-izquierda bg-blanco negro">
                                             <span>Hola de nuevo Manuel, si te parece bien podemos verlo el jueves que viene a las 10</span>
@@ -320,16 +324,16 @@
 
                                         <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
                                     </div>
-                                </div>
+                                </article>
                                 
                                 <!-- Cuadro de texto -->
                                 <input type="text" name="nuevo-mensaje" class="nuevo-mensaje blanco bg-purpura-4" placeholder="Introduzca un mensaje...">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+            </aside>
         </div>
-    </div>
+    </section>
 </body>
 </html>
