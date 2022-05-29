@@ -10,12 +10,12 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <title>Asistente de adopción</title>
 </head>
-<body>
+<body class="altura-completa">
     <!-- Pantalla de transición -->
     <div id="transicion" class="transicion"></div>
 
     <!-- 1º Paso - Formulario -->
-    <section id="formulario" class="contenedor bg-purpura-1">
+    <section id="formulario" class="contenedor altura-completa bg-purpura-1">
         <br>
 
         <!-- Cabecera -->
@@ -25,7 +25,7 @@
                     <!-- Botón de retroceso -->
                     <nav class="columna-smartphone-3">
                         <a href="detalle.html">
-                            <img class="icono" src="../assets/icons/atras-purpura.svg" />
+                            <img class="icono" src="../assets/icons/atras-purpura.svg" alt="Atrás" />
                         </a>
                     </nav>
                     <!-- Nombre del animal -->
@@ -82,7 +82,7 @@
 
                             <!-- Foto del animal a adoptar -->
                             <footer class="imagen-cuadrada ratio-3-1">
-                                <img src="../assets/images/conejo.jpg"/>
+                                <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                             </footer>
                         </div>
                     </div>
@@ -94,23 +94,23 @@
         <footer class="fila">
             <section id="boton-adopcion" class="columna-escritorio-4 columna-escritorio-offset-4 columna-smartphone-12">
                 <article class="celda centrado">
-                    <button class="boton"
-                            onclick="document.getElementById('transicion').style.display = 'block';
-                                    document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
-                                    document.getElementById('transicion').style.background = 'rgb(255 255 255 / 100%)';
-                                    setTimeout(function() {
-                                        document.getElementById('formulario').style.display = 'none';
-                                        document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
-                                        document.getElementById('seguimiento').style.display = 'block';
-                                    }, 1000);
-                                    setTimeout(function() {
-                                        document.getElementById('transicion').style.display = 'none';
-                                    }, 2000);">
+                    <a class="boton" href="#" 
+                        onclick="document.getElementById('transicion').style.display = 'block';
+                            document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
+                            document.getElementById('transicion').style.background = 'rgb(255 255 255 / 100%)';
+                            setTimeout(function() {
+                                document.getElementById('formulario').style.display = 'none';
+                                document.getElementById('transicion').style.background = 'rgb(255 255 255 / 0%)';
+                                document.getElementById('seguimiento').style.display = 'block';
+                            }, 1000);
+                            setTimeout(function() {
+                                document.getElementById('transicion').style.display = 'none';
+                            }, 2000);">
                         <div>
                             <span>Iniciar adopción</span>
-                            <img class="icono" src="../assets/icons/aplicar-blanco.svg" />
+                            <img class="icono" src="../assets/icons/aplicar-blanco.svg" alt="Iniciar adopción" />
                         </div>
-                    </button>
+                    </a>
                 </article>
             </section>
         </footer>
@@ -131,13 +131,13 @@
                             <!-- Botón de retroceso -->
                             <nav class="columna-smartphone-3">
                                 <a href="detalle.html">
-                                    <img class="icono" src="../assets/icons/atras-purpura.svg" />
+                                    <img class="icono" src="../assets/icons/atras-purpura.svg" alt="Atrás" />
                                 </a>
                             </nav>
                             <!-- Nombre del animal -->
-                            <header class="columna-smartphone-6">
+                            <article class="columna-smartphone-6">
                                 <h3 class="sin-margen centrado purpura-4">Chispitas</h3>
-                            </header>
+                            </article>
                         </header>
 
                         <section class="fila">
@@ -146,7 +146,7 @@
                                 <div class="contenedor-smartphone">
                                     <div class="fila sin-margen-inferior">
                                         <div class="imagen-cuadrada ratio-16-9">
-                                            <img src="../assets/images/conejo.jpg"/>
+                                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                             <a class="boton" href="detalle.html">
                                                 <div>
                                                     <span>Cancelar adopción</span>
-                                                    <img class="icono" src="../assets/icons/rechazar-blanco.svg" />
+                                                    <img class="icono" src="../assets/icons/rechazar-blanco.svg" alt="Cancelar adopción" />
                                                 </div>
                                             </a>
                                         </div>
@@ -189,8 +189,8 @@
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-inferior-10">
                                                     <div class="fila sin-margen-inferior">
                                                         <div class="etiqueta">
-                                                            <img class="icono" src="../assets/icons/llamada-purpura.svg" />
-                                                            <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
+                                                            <img class="icono" src="../assets/icons/llamada-purpura.svg" alt="Llamar" />
+                                                            <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" alt="Llamar" />
                                                         </div>
                                                         <div class="detalle">
                                                             <h4 class="sin-margen">Llamar</h4>
@@ -209,8 +209,8 @@
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-inferior-10">
                                                     <div class="fila sin-margen-inferior">
                                                         <div class="etiqueta">
-                                                            <img class="icono" src="../assets/icons/documentos-purpura.svg" />
-                                                            <img class="icono icono-hover" src="../assets/icons/documentos-blanco.svg" />
+                                                            <img class="icono" src="../assets/icons/documentos-purpura.svg" alt="Documentación" />
+                                                            <img class="icono icono-hover" src="../assets/icons/documentos-blanco.svg" alt="Documentación" />
                                                         </div>
                                                         <div class="detalle">
                                                             <h4 class="sin-margen">Documentación</h4>
@@ -231,8 +231,8 @@
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-derecho-10 margen-superior-10">
                                                     <div class="fila sin-margen-inferior">
                                                         <div class="etiqueta">
-                                                            <img class="icono" src="../assets/icons/fecha-purpura.svg" />
-                                                            <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                                            <img class="icono" src="../assets/icons/fecha-purpura.svg" alt="Fecha" />
+                                                            <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" alt="Fecha" />
                                                         </div>
                                                         <div class="detalle">
                                                             <h4 class="sin-margen">Fecha</h4>
@@ -251,8 +251,8 @@
                                                 <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-superior-10">
                                                     <div class="fila sin-margen-inferior">
                                                         <div class="etiqueta">
-                                                            <img class="icono" src="../assets/icons/ubicacion-purpura.svg" />
-                                                            <img class="icono icono-hover" src="../assets/icons/ubicacion-blanco.svg" />
+                                                            <img class="icono" src="../assets/icons/ubicacion-purpura.svg" alt="Ubicación" />
+                                                            <img class="icono icono-hover" src="../assets/icons/ubicacion-blanco.svg" alt="Ubicación" />
                                                         </div>
                                                         <div class="detalle">
                                                             <h4 class="sin-margen">Ubicación</h4>
@@ -281,7 +281,7 @@
                                 <!-- 1º Conversación -->
                                 <article class="fila">
                                     <div class="columna-smartphone-12">
-                                        <img class="avatar mover-a-la-izquierda" src="../assets/images/avatar-2.png" />
+                                        <img class="avatar mover-a-la-izquierda" src="../assets/images/avatar-2.png" alt="Manuel" />
                                         
                                         <div class="chat mover-a-la-derecha bg-purpura-4 blanco">
                                             <span>¡Hola! Mi nombre es Manuel, quería saber si sería posible acercarme al centro y ver en persona a Chispitas</span>
@@ -298,7 +298,7 @@
                                             <span>¡Hola Manuel! Claro, deja que revise cuando podemos concertar una cita</span>
                                         </div>
 
-                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
+                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" alt="Sandra" />
                                     </div>
                                 </article>
 
@@ -322,7 +322,7 @@
                                             <span>Hola de nuevo Manuel, si te parece bien podemos verlo el jueves que viene a las 10</span>
                                         </div>
 
-                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" />
+                                        <img class="avatar mover-a-la-derecha" src="../assets/images/avatar-1.png" alt="Sandra" />
                                     </div>
                                 </article>
                                 

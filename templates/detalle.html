@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <!-- Script para compatibilizar el navegador con Google Maps -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="text/javascript">
+    <script>
         // Método que invoca Google Maps
         function initMap() {
             // Coordenadas (Latitud y Longitud) de Alcobendas
@@ -33,62 +33,62 @@
 <body>
     <!-- Navbar -->
     <nav class="contenedor navbar">
-        <section class="fila sin-margen-inferior">
+        <ul class="fila">
             <!-- Home -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <a class="celda" href="home.html">
-                    <img class="icono" src="../assets/icons/menu-blanco.svg" />
+                    <img class="icono" src="../assets/icons/menu-blanco.svg" alt="Home" />
                     <div class="texto">Home</div>
                 </a>
-            </article>
+            </li>
             
             <!-- Animales -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <a class="celda" href="listado.html">
-                    <img class="icono" src="../assets/icons/categoria-blanco.svg" />
+                    <img class="icono" src="../assets/icons/categoria-blanco.svg" alt="Animales" />
                     <div class="texto">Animales</div>
                 </a>
-            </article>
+            </li>
             
             <!-- Centros -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <div class="celda">
-                    <img class="icono" src="../assets/icons/ubicacion-blanco.svg" />
+                    <img class="icono" src="../assets/icons/ubicacion-blanco.svg" alt="Centros" />
                     <div class="texto">Centros</div>
                 </div>
-            </article>
+            </li>
             
             <!-- Unirse -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <div class="celda">
-                    <img class="icono" src="../assets/icons/usuario-blanco.svg" />
+                    <img class="icono" src="../assets/icons/usuario-blanco.svg" alt="Unirse" />
                     <div class="texto">Unirse</div>
                 </div>
-            </article>
-        </section>
+            </li>
+        </ul>
     </nav>
 
     <section class="fila sin-margen-inferior">
         <!-- Listado con scroll -->
-        <div id="detalle-animal" class="columna-escritorio-8 columna-smartphone-12">
+        <article id="detalle-animal" class="columna-escritorio-8 columna-smartphone-12">
             <!-- Imagen principal -->
-            <article class="fila">
+            <div class="fila">
                 <div class="columna-smartphone-12">
                     <div class="celda">
                         <div class="imagen-cuadrada ratio-16-9">
-                            <img src="../assets/images/conejo.jpg"/>
+                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
 
             <!-- Listado de imágenes -->
-            <article class="fila">
+            <div class="fila">
                 <!-- 1º Imagen -->
                 <div class="columna-smartphone-3">
                     <div class="celda">
                         <div class="imagen-cuadrada">
-                            <img src="../assets/images/conejo.jpg"/>
+                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                 <div class="columna-smartphone-3">
                     <div class="celda">
                         <div class="imagen-cuadrada">
-                            <img src="../assets/images/conejo.jpg"/>
+                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                 <div class="columna-smartphone-3">
                     <div class="celda">
                         <div class="imagen-cuadrada">
-                            <img src="../assets/images/conejo.jpg"/>
+                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                         </div>
                     </div>
                 </div>
@@ -112,11 +112,11 @@
                 <div class="columna-smartphone-3">
                     <div class="celda">
                         <div class="imagen-cuadrada">
-                            <img src="../assets/images/conejo.jpg"/>
+                            <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                         </div>
                     </div>
                 </div>
-            </article>
+            </div>
 
             <!-- Cuerpo con el texto -->
             <article class="fila sin-margen-inferior margen-horizontal-10 bg-purpura-5 blanco">
@@ -144,13 +144,13 @@
                         <a class="boton" href="asistente.html">
                             <div>
                                 <span>Solicitar adopción</span>
-                                <img class="icono" src="../assets/images/icono-adopcion.png" />
+                                <img class="icono" src="../assets/images/icono-adopcion.png" alt="Adopción" />
                             </div>
                         </a>
                     </div>
                 </div>
             </article>
-        </div>
+        </article>
         
         <!-- Bloques detallados -->
         <div id="lista-informativa" class="columna-escritorio-4 columna-smartphone-12">
@@ -162,8 +162,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/categoria-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/categoria-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/categoria-purpura.svg" alt="Raza" />
+                                        <img class="icono icono-hover" src="../assets/icons/categoria-blanco.svg" alt="Raza" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Raza</h4>
@@ -184,8 +184,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/precio-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/precio-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/precio-purpura.svg" alt="Nº de visitas" />
+                                        <img class="icono icono-hover" src="../assets/icons/precio-blanco.svg" alt="Nº de visitas" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Nº de visitas</h4>
@@ -206,8 +206,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/fecha-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/fecha-purpura.svg" alt="Nacimiento" />
+                                        <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" alt="Nacimiento" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Nacimiento</h4>
@@ -228,8 +228,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/hora-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/hora-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/hora-purpura.svg" alt="Llegada" />
+                                        <img class="icono icono-hover" src="../assets/icons/hora-blanco.svg" alt="Llegada" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Llegada</h4>
@@ -250,8 +250,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/ubicacion-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/ubicacion-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/ubicacion-purpura.svg" alt="Centro" />
+                                        <img class="icono icono-hover" src="../assets/icons/ubicacion-blanco.svg" alt="Centro" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Centro</h4>
@@ -272,8 +272,8 @@
                             <div class="celda tarjeta bg-purpura-1 bg-hover-purpura-4 hover-blanco margen-izquierdo-10 margen-derecho-10">
                                 <div class="fila sin-margen-inferior">
                                     <div class="etiqueta">
-                                        <img class="icono" src="../assets/icons/usuario-purpura.svg" />
-                                        <img class="icono icono-hover" src="../assets/icons/usuario-blanco.svg" />
+                                        <img class="icono" src="../assets/icons/usuario-purpura.svg" alt="Propietario" />
+                                        <img class="icono icono-hover" src="../assets/icons/usuario-blanco.svg" alt="Propietario" />
                                     </div>
                                     <div class="detalle">
                                         <h4 class="sin-margen">Propietario</h4>
@@ -301,14 +301,14 @@
                     <div class="celda">
                         <div class="bloque-texto centrado">
                             <h1 class="sin-margen-superior">Refugio de animales</h1>
-                            <img height="150px" width="150px" src="../assets/images/logo.svg" />
+                            <img height="150" width="150" src="../assets/images/logo.svg" alt="Logo" />
                         </div>
                     </div>
                 </article>
             </section>
             
             <section class="fila sin-margen-inferior">
-                <div class="columna-escritorio-4 columna-smartphone-12">
+                <article class="columna-escritorio-4 columna-smartphone-12">
                     <!-- Bloque 1 -->
                     <article class="fila">
                         <div class="columna-smartphone-12">
@@ -317,8 +317,8 @@
                                     <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/llamada.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/llamada.svg" alt="Teléfono" />
+                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" alt="Teléfono" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Teléfono</h4>
@@ -339,8 +339,8 @@
                                     <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/fecha.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/fecha.svg" alt="Horario" />
+                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" alt="Horario" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Horario</h4>
@@ -361,8 +361,8 @@
                                     <div class="celda tarjeta bg-blanco bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/email.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/email.svg" alt="Email" />
+                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" alt="Email" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Email</h4>
@@ -376,7 +376,7 @@
                     </article>
                 
                     <br>
-                </div>
+                </article>
 
                 <article class="columna-escritorio-8 columna-smartphone-12">
                     <div class="celda">

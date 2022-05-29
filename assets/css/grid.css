@@ -231,3 +231,9 @@ body {
         padding-right: 50px !important;
     }
 }
+
+
+/**
+ * Estilos para tamaños
+ * */
+.altura-completa { min-height: 100vh }

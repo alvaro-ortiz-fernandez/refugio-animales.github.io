@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <!-- Script para compatibilizar el navegador con Google Maps -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="text/javascript">
+    <script>
         // Método que invoca Google Maps
         function initMap() {
             // Coordenadas (Latitud y Longitud) de Alcobendas
@@ -33,39 +33,39 @@
 <body>
     <!-- Navbar -->
     <nav class="contenedor navbar">
-        <section class="fila sin-margen-inferior">
+        <ul class="fila">
             <!-- Home -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <a class="celda" href="home.html">
-                    <img class="icono" src="../assets/icons/menu-blanco.svg" />
+                    <img class="icono" src="../assets/icons/menu-blanco.svg" alt="Home" />
                     <div class="texto">Home</div>
                 </a>
-            </article>
+            </li>
             
             <!-- Animales -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <div class="celda seleccionada">
-                    <img class="icono" src="../assets/icons/categoria-blanco.svg" />
+                    <img class="icono" src="../assets/icons/categoria-blanco.svg" alt="Animales" />
                     <div class="texto">Animales</div>
                 </div>
-            </article>
+            </li>
             
             <!-- Centros -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <div class="celda">
-                    <img class="icono" src="../assets/icons/ubicacion-blanco.svg" />
+                    <img class="icono" src="../assets/icons/ubicacion-blanco.svg" alt="Centros" />
                     <div class="texto">Centros</div>
                 </div>
-            </article>
+            </li>
             
             <!-- Unirse -->
-            <article class="columna-smartphone-3 centrado">
+            <li class="columna-smartphone-3 centrado">
                 <div class="celda">
-                    <img class="icono" src="../assets/icons/usuario-blanco.svg" />
+                    <img class="icono" src="../assets/icons/usuario-blanco.svg" alt="Unirse" />
                     <div class="texto">Unirse</div>
                 </div>
-            </article>
-        </section>
+            </li>
+        </ul>
     </nav>
 
     <section class="fila">
@@ -93,19 +93,19 @@
                 <div class="celda">
                     <!-- Categoria -->
                     <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/categoria.svg" />
+                        <img src="../assets/icons/categoria.svg" alt="Categoria" />
                     </div>
                     <!-- Ubicación -->
                     <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/ubicacion.svg" />
+                        <img src="../assets/icons/ubicacion.svg" alt="Ubicación" />
                     </div>
                     <!-- Foto -->
                     <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/imagen.svg" />
+                        <img src="../assets/icons/imagen.svg" alt="Foto" />
                     </div>
                     <!-- Precio -->
                     <div class="columna-smartphone-3 centrado">
-                        <img src="../assets/icons/precio.svg" />
+                        <img src="../assets/icons/precio.svg" alt="Precio" />
                     </div>
                 </div>
             </nav>
@@ -120,7 +120,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada achura-doble">
-                                <img src="../assets/images/cerdito.png"/>
+                                <img src="../assets/images/cerdito.png" alt="Kira" />
                             </div>
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada">
-                                <img src="../assets/images/conejo.jpg"/>
+                                <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                             </div>
                         </a>
                     </div>
@@ -144,7 +144,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada">
-                                <img src="../assets/images/perro.png"/>
+                                <img src="../assets/images/perro.png" alt="Nilo" />
                             </div>
                         </a>
                     </div>
@@ -154,7 +154,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada altura-doble">
-                                <img src="../assets/images/gato.jpg"/>
+                                <img src="../assets/images/gato.jpg" alt="Linda" />
                             </div>
                         </a>
                     </div>
@@ -164,7 +164,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada">
-                                <img src="../assets/images/gato.jpg"/>
+                                <img src="../assets/images/gato.jpg" alt="Linda" />
                             </div>
                         </a>
                     </div>
@@ -178,7 +178,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada">
-                                <img src="../assets/images/conejo.jpg"/>
+                                <img src="../assets/images/conejo.jpg" alt="Chispitas" />
                             </div>
                         </a>
                     </div>
@@ -188,7 +188,7 @@
                     <div class="celda">
                         <a href="detalle.html">
                             <div class="imagen-cuadrada">
-                                <img src="../assets/images/perro.png"/>
+                                <img src="../assets/images/perro.png" alt="Nilo" />
                             </div>
                         </a>
                     </div>
@@ -216,14 +216,14 @@
                     <div class="celda">
                         <div class="bloque-texto centrado">
                             <h1 class="sin-margen-superior">Refugio de animales</h1>
-                            <img height="150px" width="150px" src="../assets/images/logo.svg" />
+                            <img height="150" width="150" src="../assets/images/logo.svg" alt="Logo" />
                         </div>
                     </div>
                 </article>
             </section>
             
             <section class="fila sin-margen-inferior">
-                <div class="columna-escritorio-4 columna-smartphone-12">
+                <article class="columna-escritorio-4 columna-smartphone-12">
                     <!-- Bloque 1 -->
                     <article class="fila">
                         <div class="columna-smartphone-12">
@@ -232,8 +232,8 @@
                                     <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/llamada.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/llamada.svg" alt="Teléfono" />
+                                                <img class="icono icono-hover" src="../assets/icons/llamada-blanco.svg" alt="Teléfono" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Teléfono</h4>
@@ -254,8 +254,8 @@
                                     <div class="celda tarjeta bg-gris-claro bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/fecha.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/fecha.svg" alt="Horario" />
+                                                <img class="icono icono-hover" src="../assets/icons/fecha-blanco.svg" alt="Horario" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Horario</h4>
@@ -276,8 +276,8 @@
                                     <div class="celda tarjeta bg-blanco bg-hover-gris-oscuro hover-blanco margen-izquierdo-10 margen-derecho-10">
                                         <div class="fila sin-margen-inferior">
                                             <div class="etiqueta">
-                                                <img class="icono" src="../assets/icons/email.svg" />
-                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" />
+                                                <img class="icono" src="../assets/icons/email.svg" alt="Email" />
+                                                <img class="icono icono-hover" src="../assets/icons/email-blanco.svg" alt="Email" />
                                             </div>
                                             <div class="detalle">
                                                 <h4 class="sin-margen">Email</h4>
@@ -291,7 +291,7 @@
                     </article>
                 
                     <br>
-                </div>
+                </article>
 
                 <article class="columna-escritorio-8 columna-smartphone-12">
                     <div class="celda">

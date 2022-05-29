@@ -366,6 +366,11 @@ input:invalid:not(:placeholder-shown) {
         margin: 8px -43px 20px -43px !important;
    }
 }
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-inline-start: 0;
+}
 .navbar .celda {
     margin: 0 5px;
     padding-top: 5px;
