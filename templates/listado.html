@@ -13,21 +13,13 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script>
         // Método que invoca Google Maps
-        function initMap() {
-            // Coordenadas (Latitud y Longitud) de Alcobendas
-            const alcobendas = { lat: 40.5475, lng: -3.64209 };
-
-            // Pintamos el mapa
-            const marker = new google.maps.Marker({
-                position: alcobendas,
-                map: new google.maps.Map(document.getElementById("map"), {
-                    zoom: 12,
-                    center: alcobendas,
-                })
+        function iniciarMapa() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                // Coordenadas (Latitud y Longitud) de Alcobendas
+                center: new google.maps.LatLng(40.5475, -3.64209),
+                zoom: 12,
             });
         }
-
-        window.initMap = initMap;
     </script>
     <title>Listado de animales</title>
 </head>
@@ -297,7 +289,7 @@
                 <article class="columna-escritorio-8 columna-smartphone-12">
                     <div class="celda">
                         <div id="map" style="height: 265px; width: 100%;"></div>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADUfdKvRvarwgLrst2lQS1s4szGXynBrE&callback=iniciarMapa"></script>
                     </div>
 
                     <br>
